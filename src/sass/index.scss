@@ -1,10 +1,10 @@
 @import './common';
-@import './example';
 
 
 //general styles
 @import './base/general';
 
+@import './/components/section-title';
 
 @import './layout/header';
 @import './layout/menu';
