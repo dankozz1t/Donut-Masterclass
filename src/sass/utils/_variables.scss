@@ -1,1 +1,19 @@
-// ЗАГАЛЬНІ ЗМІННІ 
+// ЗАГАЛЬНІ ЗМІННІ
+:root {
+  // Fonts
+  --main-font: 'Caveat Brush', cursive;
+  --secondary-font: 'Montserrat', sans-serif;
+
+  // Text colors
+  --main-text-cl: #2e2520;
+  --button-text-cl: #ffffff;
+  --accent-cl: #ab816c;
+  --placeholder-text-cl: rgba(171, 129, 108, 0.5);
+  --donut-title-text-cl: #000000;
+  --hover-link-cl: #876655;
+
+  // Background colors
+  --main-bg-cl: #fffff9;
+  --secondary-bg-cl: #fef3e4;
+  --burger-bg-cl: rgba(254, 243, 228, 0.9);
+}
