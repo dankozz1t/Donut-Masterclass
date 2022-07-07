@@ -1,2 +1,19 @@
 @import './common';
 @import './example';
+
+
+//general styles
+@import './base/general';
+
+
+@import './layout/header';
+@import './layout/menu';
+
+@import './layout/about-us';
+@import './layout/program';
+@import './layout/speakers';
+@import './layout/price';
+@import './layout/reviews';
+@import './layout/contacts';
+
+@import './layout/footer';
