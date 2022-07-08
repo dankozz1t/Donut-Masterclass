@@ -1,10 +1,35 @@
 <section class="container about-us">
   <div>
-    <img
-      src="./images/about-us/about-us_sm.png"
-      alt="donut with box"
-      class="about-us__img"
-    />
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/about-us/about-us_lg.png    1x,
+          ./images/about-us/about-us_lg@2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/about-us/about-us_md.png    1x,
+          ./images/about-us/about-us_md@2x.png 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/about-us/about-us_sm.png    1x,
+          ./images/about-us/about-us_sm@2x.png 2x
+        "
+      />
+      <img
+        class="img about-us__img"
+        src="./images/about-us/about-us_sm.png"
+        alt="Donut with box and cup"
+        width="279"
+        height="298"
+      />
+    </picture>
   </div>
   <div class="about-us__block">
     <h2 class="section-title">About us</h2>
