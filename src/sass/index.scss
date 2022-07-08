@@ -3,11 +3,12 @@
 @import './utils/variables';
 @import './utils/mixin-media';
 
+@import './components/button';
 @import './components/section-title';
 @import './components/container';
 @import './components/main-title';
 @import './components/section-title';
-@import './components/socials';
+@import './components/socials-list';
 
 @import './layout/header';
 @import './layout/menu';
