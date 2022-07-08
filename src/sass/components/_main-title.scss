@@ -1,6 +1,5 @@
-.title {
+.main-title {
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.27;
@@ -11,11 +10,7 @@
   }
 
   @include media(desktop) {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 400;
     font-size: 64px;
     line-height: 1.01;
-    color: var(--main-text-cl);
   }
 }

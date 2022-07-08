@@ -1,6 +1,5 @@
-.subtitle {
+.section-title {
   font-family: var(--main-font);
-  font-style: normal;
   text-align: center;
   font-weight: 400;
   font-size: 24px;
@@ -8,12 +7,6 @@
   color: var(--main-text-cl);
 
   @include media(desktop) {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 400;
     font-size: 36px;
-    line-height: 1.25;
-    text-align: center;
-    color: var(--main-text-cl);
   }
 }
