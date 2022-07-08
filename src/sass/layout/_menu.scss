@@ -1,5 +1,5 @@
 .menu {
-  // display: none;
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -8,6 +8,10 @@
 
   background-color: var(--burger-bg-cl);
   backdrop-filter: blur(4px);
+
+  &.is-open {
+    display: block;
+  }
 }
 
 .menu__container {
@@ -22,6 +26,11 @@
 }
 
 .menu__btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 100;
+
   width: 30px;
   height: 16px;
 
@@ -30,5 +39,15 @@
   &:hover .menu__icon,
   &:focus .menu__icon {
     fill: var(--secondary-accent-cl);
+  }
+
+  & .icon-cross {
+    display: none;
+  }
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
   }
 }
