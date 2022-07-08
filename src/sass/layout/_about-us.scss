@@ -1,0 +1,14 @@
+.about-us {
+  display: block;
+  align-items: center;
+}
+.about-us__button {
+  font-family: var(--main-font);
+  color: var(--secondary-accent-cl);
+  background-color: var(----button-text-cl);
+  border: 0px;
+  margin-top: 16px;
+}
+.is-hidden {
+  display: none;
+}
