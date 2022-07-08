@@ -6,23 +6,25 @@
   // Text colors
   --main-text-cl: #2e2520;
   --button-text-cl: #ffffff;
-  --secondary-accent-cl: #ab816c;
   --placeholder-text-cl: rgba(171, 129, 108, 0.5);
   --donut-title-text-cl: #000000;
   --hover-link-cl: #876655;
 
   // Background colors
   --main-bg-cl: #ffffff;
-  --main-accent-cl: #fef3e4;
   --secondary-bg-cl: ##fffff9;
+
+  --main-accent-cl: #fef3e4;
+  --secondary-accent-cl: #ab816c;
+
   --burger-bg-cl: rgba(254, 243, 228, 0.9);
 
   // Transition
   --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-time: 500ms;
-
-  //  Adaptive
-  $mobile: 320px;
-  $table: 768px;
-  $desktop: 1280px;
 }
+
+//  Adaptive
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;

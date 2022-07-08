@@ -1,20 +1,21 @@
 .title {
-  font-family: 'Caveat Brush';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.27;
-  color: #2e2520;
-  @media screen and (max-width: 767.9px) {
+  color: var(--main-text-cl);
+
+  @include media(mobile-only) {
     text-align: center;
   }
 
-  @media screen and (min-width: 1280px) {
-    font-family: 'Caveat Brush';
+  @include media(desktop) {
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 1.01;
-    color: #2e2520;
+    color: var(--main-text-cl);
   }
 }
