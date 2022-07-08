@@ -15,22 +15,27 @@
 }
 
 .program__item::before {
-  content: '> ';
+  content: '\003E  ';
 }
-.program__bottom {
+.program-bottom {
   margin-bottom: 20px;
 }
 
-// .program__group {
+// .program-card {
 //   display: flex;
 // }
 
-// .program__list {
-//   width: 130px;
-//   height: 165px;
-// }
+.program-card__list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.program__item--bottom {
+.program-card__item {
+  width: 130px;
+  height: 165px;
+}
+
+.program-card__item--bottom {
   background: #fef3e4;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 }
