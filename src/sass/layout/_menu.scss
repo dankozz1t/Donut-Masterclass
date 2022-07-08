@@ -1,0 +1,23 @@
+.menu__container {
+  // display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--burger-bg-cl);
+  backdrop-filter: blur(4px);
+}
+
+.menu__btn {
+  width: 30px;
+  height: 16px;
+
+  border: none;
+
+  &:hover .menu__icon,
+  &:focus .menu__icon {
+    fill: var(--secondary-accent-cl);
+  }
+}
