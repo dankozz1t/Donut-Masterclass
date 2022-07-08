@@ -27,13 +27,26 @@
   }
 }
 .price__card {
+  position: relative;
+  height: 610px;
   padding: 20px 20px;
 
+  background: var(--main-accent-cl);
+  border-radius: 40px;
+
+  background-image: url(../images/price/leaks_sm.png);
+  background-size: 100% 102px;
+  background-repeat: no-repeat;
+
+  @include media(retina) {
+    background-image: url(../images/price/leaks_sm@2x.png);
+  }
+
   @include media(tablet) {
-    // margin-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     background-image: url(../images/price/leaks_md.png);
 
     @include media(retina) {
@@ -45,75 +58,49 @@
     padding-right: 28px;
     padding-top: 28px;
     padding-bottom: 40px;
+
+    background-image: url(../images/price/leaks_lg.png);
+    background-size: 100% 185px;
+
+    @include media(retina) {
+      background-image: url(../images/price/leaks_lg@2x.png);
+    }
   }
-
-  background: #fef3e4;
-  border-radius: 40px;
-
-  //   background-image: url(../images/price/leaks_sm.png);
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/price/leaks_sm@2x.png);
-  //   }
-
-  //   @media screen and (min-width: 1280px) {
-  //     background-image: url(../images/price/leaks_lg.png);
-  //   }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/price/leaks_lg@2x.png);
-  //   }
 }
 
 .price__name {
   margin: 0;
   margin-bottom: 16px;
 
-  font-family: 'Montserrat';
+  font-family: var(--secondary-font);
   font-style: italic;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
+  @include font-size(18px, 22px, 600);
   text-align: center;
 
-  color: #2e2520;
+  color: var(--main-text-cl);
 
   @include media(desktop) {
     margin-bottom: 40px;
-
-    font-size: 20px;
-    line-height: 24px;
+    @include font-size(20px, 24px, 600);
   }
 }
 
 .price__desc {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
+  font-family: var(--secondary-font);
+  @include font-size(18px, 22px);
 
-  color: #2e2520;
+  color: var(--main-text-cl);
 }
 
-f ds.price__item {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
+.price__item {
+  font-family: var(--secondary-font);
+  @include font-size(18px, 22px);
+
   @include media(tablet) {
-    font-size: 16px;
-    line-height: 1.25;
+    @include font-size(16px, 20x);
   }
   @include media(desktop) {
-    font-size: 18px;
-    line-height: 22px;
+    @include font-size(18px, 22px);
   }
 }
 
@@ -133,4 +120,75 @@ f ds.price__item {
 .price__button {
   margin-left: auto;
   margin-right: auto;
+}
+
+.price__image--1 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 48%;
+    right: 0;
+    transform: translateX(-20%);
+  }
+}
+
+.price__image--2 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 65%;
+  }
+}
+
+.price__image--3 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    left: 60%;
+    top: 65%;
+  }
+}
+
+.price__image--4 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 76%;
+  }
+}
+.price__image--5 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 60%;
+    right: 0;
+  }
+}
+
+.price__image--6 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(75%);
+  }
+}
+
+.price__image--7 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 75%;
+    right: 0;
+  }
 }
