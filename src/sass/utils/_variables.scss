@@ -1,4 +1,3 @@
-// ЗАГАЛЬНІ ЗМІННІ
 :root {
   // Fonts
   --main-font: 'Caveat Brush', cursive;
@@ -13,7 +12,16 @@
   --hover-link-cl: #876655;
 
   // Background colors
-  --main-bg-cl: #fffff9;
+  --main-bg-cl: #ffffff;
   --secondary-bg-cl: #fef3e4;
   --burger-bg-cl: rgba(254, 243, 228, 0.9);
+
+  // Transition
+  --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-time: 500ms;
+
+  //  Adaptive
+  $mobile: 320px;
+  $table: 768px;
+  $desktop: 1280px;
 }
