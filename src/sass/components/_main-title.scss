@@ -1,16 +1,16 @@
-.main-title {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.27;
-  color: var(--main-text-cl);
+// .main-title {
+//   font-family: var(--main-font);
+//   font-weight: 400;
+//   font-size: 30px;
+//   line-height: 1.27;
+//   color: var(--main-text-cl);
 
-  @include media(mobile-only) {
-    text-align: center;
-  }
+//   @include media(mobile-only) {
+//     text-align: center;
+//   }
 
-  @include media(desktop) {
-    font-size: 64px;
-    line-height: 1.01;
-  }
-}
+//   @include media(desktop) {
+//     font-size: 64px;
+//     line-height: 1.01;
+//   }
+// }
