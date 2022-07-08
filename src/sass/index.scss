@@ -1,8 +1,8 @@
 @import './base/common';
 
 @import './utils/variables';
-@import './utils/mixin-font';
 @import './vendors/mixin-media';
+@import './utils/mixin-font-size';
 
 @import './components/button';
 @import './components/section-title';
