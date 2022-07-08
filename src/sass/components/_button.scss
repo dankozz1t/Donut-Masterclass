@@ -1,15 +1,20 @@
 .button {
-  background-color: #ab816c;
-  border-radius: 25px;
-  font-family: 'Caveat Brush';
-  font-style: normal;
-  @include fonts(400, 18px, 1.28);
-  text-align: center;
-  color: #ffffff;
   width: 145px;
   height: 40px;
+
+  border-radius: 25px;
   border: none;
-  cursor: pointer;
+
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #ab816c;
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
