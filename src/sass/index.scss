@@ -1,7 +1,8 @@
 @import './base/common';
 
 @import './utils/variables';
-@import './utils/mixin-media';
+@import './vendors/mixin-media';
+@import './utils/mixin-font-size';
 
 @import './components/button';
 @import './components/section-title';
@@ -19,5 +20,6 @@
 @import './layout/price';
 @import './layout/reviews';
 @import './layout/contacts';
+@import './layout/registration';
 
 @import './layout/footer';
