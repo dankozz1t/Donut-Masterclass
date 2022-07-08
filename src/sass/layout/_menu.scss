@@ -18,8 +18,6 @@
   max-width: 320px;
   height: 100%;
   padding: 25px 65px;
-  // margin-left: auto;
-  // margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,18 +34,22 @@
 
   border: none;
 
+  background-color: var(--burger-bg-cl);
+
+  transition: fill var(--transition-time) var(--transition-cubic);
+
   &:hover .menu__icon,
   &:focus .menu__icon {
     fill: var(--secondary-accent-cl);
   }
 
-  & .icon-cross {
+  & .menu__close {
     display: none;
   }
-  &.is-open .icon-cross {
+  &.is-open .menu__close {
     display: block;
   }
-  &.is-open .icon-menu {
+  &.is-open .menu__menu {
     display: none;
   }
 }
