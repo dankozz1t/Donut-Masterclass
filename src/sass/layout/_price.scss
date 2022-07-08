@@ -1,0 +1,68 @@
+.price__cards {
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media(mobie-only) {
+    max-width: 380px;
+  }
+  @include media(tablet) {
+    height: 580px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+  @include media(desktop) {
+    gap: 32px;
+    justify-content: space-evenly;
+  }
+}
+.price__card {
+  padding: 20px 20px;
+  //   @include media(tablet) {
+  //     padding-right: 0;
+  //   }
+
+  background: #fef3e4;
+  border-radius: 40px;
+}
+
+.price__card:not(:last-child) {
+  margin-bottom: 16px;
+  @include media(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.price__name {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+
+  color: #2e2520;
+}
+
+.price__desc {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  @include media(tablet) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  color: #2e2520;
+}
+.price__item:last-child {
+  margin-bottom: 32px;
+}
+.price__item:not(:last-child) {
+  margin-bottom: 12px;
+}
