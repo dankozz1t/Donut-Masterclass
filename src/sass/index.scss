@@ -1,10 +1,10 @@
-@import './common';
+@import './base/common';
 
-
-//general styles
-@import './base/general';
+@import './utils/variables';
+@import './utils/mixin-media';
 
 @import './components/section-title';
+@import './components/container';
 
 @import './layout/header';
 @import './layout/menu';
