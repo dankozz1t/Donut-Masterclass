@@ -1,13 +1,14 @@
-.socials__list {
+.socials-list {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-.socials__link {
+
+.socials-list__link {
   transition: fill var(--transition-time) var(--transition-cubic);
 }
 
-.socials__link:hover,
-.socials__link:focus .socials__icon {
+.socials-list__link:hover,
+.socials-list__link:focus .socials-list__icon {
   fill: var(--secondary-accent-cl);
 }
