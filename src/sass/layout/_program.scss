@@ -1,3 +1,7 @@
+// .program {
+//   width: 320px;
+// }
+
 .program__title {
   margin-bottom: 8px;
 }
@@ -6,8 +10,15 @@
   margin-bottom: 8px;
 }
 
+.program__item {
+  margin-bottom: 8px;
+}
+
 .program__item::before {
   content: '> ';
+}
+.program__bottom {
+  margin-bottom: 20px;
 }
 
 // .program__group {
