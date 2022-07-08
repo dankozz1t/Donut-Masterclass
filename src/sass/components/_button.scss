@@ -10,13 +10,12 @@
   color: var(--button-text-cl);
   background-color: var(--secondary-accent-cl);
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.28;
 
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-time) var(--transition-cubic),
+    color var(--transition-time) var(--transition-cubic);
 }
 
 .button__link {
