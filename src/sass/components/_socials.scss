@@ -4,10 +4,10 @@
   gap: 16px;
 }
 .socials__link {
-  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-time) var(--transition-cubic);
 }
 
 .socials__link:hover,
 .socials__link:focus .socials__icon {
-  fill: #ab816c;
+  fill: var(--secondary-accent-cl);
 }

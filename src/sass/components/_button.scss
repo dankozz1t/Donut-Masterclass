@@ -7,9 +7,9 @@
 
   text-align: center;
 
-  color: #ffffff;
-  background-color: #ab816c;
-  font-family: 'Caveat Brush';
+  color: var(--button-text-cl);
+  background-color: var(--secondary-accent-cl);
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -26,6 +26,6 @@
 
 .button:hover,
 .button:focus {
-  background-color: #2e2520;
-  color: #ab816c;
+  color: var(--secondary-accent-cl);
+  background-color: var(--main-text-cl);
 }
