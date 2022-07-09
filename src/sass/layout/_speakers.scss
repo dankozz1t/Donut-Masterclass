@@ -1,45 +1,63 @@
 .speakers {
   background-color: var(--main-accent-cl);
   border-radius: 0px 0px 40px 40px;
-  margin-left: 13px;
-  margin-right: 16px;
-  width: 480px;
-  height: 548px;
-
-  @include media(tablet-only) {
-    width: 704px;
-    height: 443px;
-  }
-  @include media(desktop) {
-    width: 1251px;
-    height: 555px;
-  }
 }
+
 .all__cards {
   display: flex;
+  flex-direction: column;
+  padding-top: 82px;
+
   @include media(desktop) {
-    margin-top: 179px;
-    flex-wrap: wrap;
+    padding: 179px 0 40px;
     justify-content: center;
+    flex-direction: row;
   }
   @include media(tablet-only) {
-    margin-top: 122px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-top: 122px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
+
 .speakers__two-cards {
+  display: flex;
+  justify-content: space-between;
+
+  &:last-child {
+    margin: 32px 0 29px;
+  }
+
   @include media(desktop) {
-    display: flex;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  @include media(tablet-only) {
+    &:last-child {
+      margin: 0;
+    }
   }
 }
+
 .speakers__card {
-  margin-top: 32px;
-  margin-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include media(desktop) {
+    margin: 32px 52px 0;
+  }
+
+  @include media(tablet-only) {
+    margin: 0;
+
+    &:nth-child(2) {
+      margin-left: 32px;
+    }
+  }
 }
+
 .name-title {
   font-weight: 600;
   font-size: 16px;
@@ -57,6 +75,7 @@
   line-height: 1.25;
   text-align: center;
   margin-top: 12px;
+  max-width: 120px;
   @include media(tablet-only) {
     margin-top: 20px;
   }
@@ -70,10 +89,7 @@
     text-align: center;
   }
 }
-.speakers__wave {
-  width: 279px;
-  height: 67px;
-}
+
 .speakers__img {
   @include media(tablet-only) {
     width: 152px;
