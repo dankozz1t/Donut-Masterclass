@@ -19,9 +19,11 @@
 }
 
 .button__link {
-  padding: 8px 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   text-decoration: none;
-  display: block;
 }
 
 .button:hover,
