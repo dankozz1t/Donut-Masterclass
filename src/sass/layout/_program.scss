@@ -1,3 +1,18 @@
+.program {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  @include media(tablet-only) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include media(desktop) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
 .program__container {
   @include media(tablet) {
     display: flex;
@@ -5,8 +20,8 @@
   }
 
   @include media(desktop) {
-    margin-left: 123px;
-    margin-right: 123px;
+    padding-left: 123px;
+    padding-right: 123px;
     gap: 142px;
   }
 }
@@ -45,6 +60,10 @@
 .program__item {
   margin-bottom: 8px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &::before {
     content: '\003E  ';
   }
@@ -54,7 +73,16 @@
   }
 }
 
+.program__text--more {
+  margin-top: 16px;
+
+  @include media(not-desktop) {
+    display: none;
+  }
+}
+
 .program__button {
+  margin-top: 16px;
   font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.28;
