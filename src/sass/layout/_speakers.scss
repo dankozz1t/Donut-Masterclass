@@ -1,68 +1,46 @@
-.speakers {
+.speakers__container {
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: var(--main-accent-cl);
-  border-radius: 0px 0px 40px 40px;
   background-image: url(../images/speakers/speaker_wave.svg);
   background-repeat: no-repeat;
+  border-radius: 0px 0px 40px 40px;
 }
 
 .all__cards {
   display: flex;
-  flex-direction: column;
-  padding-top: 82px;
-
-  @include media(desktop) {
-    padding: 179px 0 40px;
-    justify-content: center;
-    flex-direction: row;
-  }
-  @include media(tablet-only) {
-    padding-top: 122px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.speakers__two-cards {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
+  padding-top: 66px;
 
-  &:last-child {
-    margin: 32px 0 29px;
+  @include media(tablet) {
+    padding-top: 106px;
   }
-
   @include media(desktop) {
-    &:last-child {
-      margin: 0;
-    }
-  }
-  @include media(tablet-only) {
-    &:last-child {
-      margin: 0;
-    }
+    padding-top: 162px;
   }
 }
 
 .speakers__card {
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 16px 0;
 
   @include media(desktop) {
-    margin: 32px 52px 0;
-  }
-
-  @include media(tablet-only) {
-    margin: 0;
-
-    &:nth-child(2) {
-      margin-left: 32px;
-    }
+    padding: 16px 52px;
   }
 }
 
-.name-title {
+.speakers__card:first-child {
+  @include media(mobile-only) {
+    margin-right: 100px;
+  }
+}
+
+.speakers__card-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -75,25 +53,27 @@
 
 .speakers__text {
   font-weight: 500;
-  font-size: 12px;
   line-height: 1.25;
   text-align: center;
   margin-top: 12px;
-  max-width: 120px;
+  font-size: 12px;
+  max-width: 130px;
   @include media(tablet-only) {
+    max-width: 150px;
     margin-top: 20px;
+    font-size: 14px;
+  }
+  @include media(desktop) {
+    max-width: 180px;
+    font-size: 16px;
   }
 }
-.section-title {
+.speakers__title {
   margin-top: -35px;
 
   @include media(tablet-only) {
-    text-align: center;
     margin-bottom: 2px;
     margin-top: -10px;
-  }
-  @include media(desktop) {
-    text-align: center;
   }
 }
 
