@@ -1,0 +1,89 @@
+.contact {
+  padding-top: 16px;
+
+  @include media(tablet-only) {
+    padding-top: 40px;
+  }
+
+  @include media(desktop) {
+    padding-top: 90px;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title--primary {
+  margin-bottom: 16px;
+
+  @include media(tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.contact__title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.contact__input {
+  min-width: 280px;
+  border: none;
+  border-bottom: 1px solid #ab816c;
+
+  &::-webkit-input-placeholder {
+    /* WebKit browsers */
+    line-height: 1.25;
+    color: rgba(171, 129, 108, 0.5);
+  }
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    line-height: 1.25;
+    color: rgba(171, 129, 108, 0.5);
+  }
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    line-height: 1.25;
+    color: rgba(171, 129, 108, 0.5);
+  }
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    line-height: 1.25;
+    color: rgba(171, 129, 108, 0.5);
+  }
+
+  @include media(tablet-only) {
+    min-width: 336px;
+  }
+
+  @include media(desktop) {
+    min-width: 394px;
+  }
+}
+
+.contact__input--first {
+  margin-bottom: 20px;
+
+  @include media(tablet) {
+    margin-bottom: 16px;
+  }
+}
+
+.contact__input--second {
+  margin-bottom: 32px;
+}
+
+.contact__button {
+  margin-bottom: 16px;
+}
