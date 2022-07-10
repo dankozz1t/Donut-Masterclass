@@ -1,0 +1,214 @@
+.price {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  @include media(tablet) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  @include media(desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.price__title {
+  margin-bottom: 16px;
+  @include media(tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.price__cards {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @include media(mobile-only) {
+    max-width: 380px;
+    align-items: center;
+  }
+  @include media(tablet) {
+    height: 580px;
+    flex-direction: row;
+    gap: 14px;
+  }
+  @include media(desktop) {
+    gap: 32px;
+    justify-content: space-evenly;
+  }
+}
+.price__card {
+  position: relative;
+  @include media(mobile-only) {
+    width: 280px;
+  }
+  padding: 20px 20px;
+
+  background: var(--main-accent-cl);
+  border-radius: 40px;
+
+  background-image: url(../images/price/leaks_sm.png);
+  background-size: 100% 102px;
+  background-repeat: no-repeat;
+
+  @include media(retina) {
+    background-image: url(../images/price/leaks_sm@2x.png);
+  }
+
+  @include media(tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url(../images/price/leaks_md.png);
+
+    @include media(retina) {
+      background-image: url(../images/price/leaks_md@2x.png);
+    }
+  }
+  @include media(desktop) {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+
+    background-image: url(../images/price/leaks_lg.png);
+    background-size: 100% 185px;
+
+    @include media(retina) {
+      background-image: url(../images/price/leaks_lg@2x.png);
+    }
+  }
+}
+
+.price__name {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-family: var(--secondary-font);
+  font-style: italic;
+  @include font-size(18px, 22px, 600);
+  text-align: center;
+
+  color: var(--main-text-cl);
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+    @include font-size(20px, 24px, 600);
+  }
+}
+
+.price__list {
+  font-family: var(--secondary-font);
+  @include font-size(18px, 22px);
+
+  color: var(--main-text-cl);
+}
+
+.price__item {
+  font-family: var(--secondary-font);
+  @include font-size(18px, 22px);
+
+  @include media(tablet) {
+    @include font-size(16px, 20px);
+  }
+  @include media(desktop) {
+    @include font-size(18px, 22px);
+  }
+}
+
+.price__item:last-child {
+  @include media(mobile-only) {
+    margin-bottom: 32px;
+  }
+}
+
+.price__item:not(:last-child) {
+  margin-bottom: 12px;
+  @include media(desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.price__item::before {
+  content: '\2011';
+}
+
+.price__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price__image-one {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 48%;
+    right: 0;
+    transform: translateX(-20%);
+  }
+}
+
+.price__image-two {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 65%;
+  }
+}
+
+.price__image-three {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    left: 60%;
+    top: 65%;
+  }
+}
+
+.price__image-four {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 76%;
+  }
+}
+.price__image-five {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 60%;
+    right: 0;
+  }
+}
+
+.price__image-six {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(75%);
+  }
+}
+
+.price__image-seven {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 75%;
+    right: 0;
+  }
+}
