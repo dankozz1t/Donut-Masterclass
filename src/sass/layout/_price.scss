@@ -11,14 +11,15 @@
 }
 
 .price__cards {
-  height: 610px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
+
   @include media(mobile-only) {
     max-width: 380px;
+    align-items: center;
   }
   @include media(tablet) {
     height: 580px;
@@ -32,7 +33,9 @@
 }
 .price__card {
   position: relative;
-  height: 610px;
+  @include media(mobile-only) {
+    width: 280px;
+  }
   padding: 20px 20px;
 
   background: var(--main-accent-cl);
@@ -119,6 +122,10 @@
   @include media(desktop) {
     margin-bottom: 16px;
   }
+}
+
+.price__item::before {
+  content: '\2011';
 }
 
 .price__button {
