@@ -1,9 +1,7 @@
 .main-title {
   font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.27;
   color: var(--main-text-cl);
+  @include font-size(30px, 38px, 400);
 
   width: 224px;
 
@@ -17,8 +15,9 @@
   }
 
   @include media(desktop) {
-    font-size: 64px;
-    line-height: 1.01;
+    @include font-size(64px, 65px, 400);
     margin-top: 0;
+
+    width: 490px;
   }
 }
