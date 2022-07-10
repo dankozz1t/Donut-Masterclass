@@ -65,9 +65,17 @@
   }
 }
 
-.reviews__icon {
+.reviews__rate {
+  display: flex;
+  gap: 4px;
   margin-bottom: 8px;
-  fill: var(--secondary-accent-cl);
+}
+.reviews__icon {
+  fill: #ab816c;
+}
+
+.reviews__icon--empty {
+  fill: none;
 }
 
 .reviews__name {
