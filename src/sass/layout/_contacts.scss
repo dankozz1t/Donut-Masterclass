@@ -37,30 +37,21 @@
   }
 }
 
+.contact__group {
+  position: relative;
+}
+
 .contact__input {
   min-width: 280px;
+  height: 20px;
   border: none;
   border-bottom: 1px solid #ab816c;
+  outline: none;
 
-  &::-webkit-input-placeholder {
-    /* WebKit browsers */
-    line-height: 1.25;
-    color: rgba(171, 129, 108, 0.5);
-  }
-  &:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    line-height: 1.25;
-    color: rgba(171, 129, 108, 0.5);
-  }
-  &::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    line-height: 1.25;
-    color: rgba(171, 129, 108, 0.5);
-  }
-  &:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    line-height: 1.25;
-    color: rgba(171, 129, 108, 0.5);
+  &:focus + .contact__label,
+  &:not(:placeholder-shown) + .contact__label {
+    transform: translateY(-15px);
+    font-size: 14px;
   }
 
   @include media(tablet-only) {
@@ -78,6 +69,14 @@
   @include media(tablet) {
     margin-bottom: 16px;
   }
+}
+
+.contact__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
 }
 
 .contact__input--second {
