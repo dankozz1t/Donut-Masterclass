@@ -19,8 +19,11 @@
 }
 
 .button__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   text-decoration: none;
-  display: block;
 }
 
 .button:hover,
