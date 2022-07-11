@@ -201,10 +201,15 @@
 }
 
 .registration__label {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   cursor: pointer;
+
+  font-family: var(--secondary-font);
+  @include font-size(16px, 20px);
+  color: rgba(171, 129, 108, 0.5);
+
   .registration__input:focus + &,
   .registration__input:not(:placeholder-shown) + & {
     transform: translateY(-15px);
@@ -212,8 +217,8 @@
   }
 }
 
-.registration__input::placeholder {
-  font-family: var(--secondary-font);
-  @include font-size(16px, 20px);
-  color: rgba(171, 129, 108, 0.5);
-}
+// .registration__input::placeholder {
+//   font-family: var(--secondary-font);
+//   @include font-size(16px, 20px);
+//   color: rgba(171, 129, 108, 0.5);
+// }
