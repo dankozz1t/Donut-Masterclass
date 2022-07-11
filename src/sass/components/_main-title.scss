@@ -10,12 +10,12 @@
     margin-top: 16px;
   }
 
-  @include media(tablet) {
+  @include media(tablet-only) {
     margin-top: 24px;
   }
 
   @include media(desktop) {
-    @include font-size(64px, 65px, 400);
+    @include font-size(64px, 65px);
     margin-top: 0;
 
     width: 490px;
