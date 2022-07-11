@@ -60,8 +60,14 @@
   }
 }
 
-.about-us__text:not(:last-child) {
+.about-us__text {
   margin-bottom: 22px;
+
+  &--more {
+    @include media(not-desktop) {
+      display: none;
+    }
+  }
 }
 
 .about-us__button {
