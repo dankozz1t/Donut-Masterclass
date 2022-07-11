@@ -1,5 +1,7 @@
 .contact {
-  padding-top: 16px;
+  @include media(mobile-only) {
+    padding-top: 16px;
+  }
 
   @include media(tablet-only) {
     padding-top: 40px;
@@ -17,7 +19,9 @@
 }
 
 .contact__title--primary {
-  margin-bottom: 16px;
+  @include media(mobile-only) {
+    margin-bottom: 16px;
+  }
 
   @include media(tablet) {
     margin-bottom: 20px;
@@ -42,11 +46,14 @@
 }
 
 .contact__input {
-  min-width: 280px;
   height: 20px;
   border: none;
   border-bottom: 1px solid #ab816c;
   outline: none;
+
+  @include media(mobile-only) {
+    min-width: 280px;
+  }
 
   @include media(tablet-only) {
     min-width: 336px;
@@ -58,7 +65,9 @@
 }
 
 .contact__input--first {
-  margin-bottom: 20px;
+  @include media(mobile-only) {
+    margin-bottom: 20px;
+  }
 
   @include media(tablet) {
     margin-bottom: 16px;
