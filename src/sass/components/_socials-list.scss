@@ -6,9 +6,18 @@
 
 .socials-list__link {
   transition: fill var(--transition-time) var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--secondary-accent-cl);
+    transform: scale(1.7) rotate(360deg);
+  }
 }
 
-.socials-list__link:hover,
-.socials-list__link:focus .socials-list__icon {
-  fill: var(--secondary-accent-cl);
+.socials-list__icon {
+  .socials-list__link:hover &,
+  .socials-list__link:focus & {
+    fill: var(--secondary-accent-cl);
+    animation: jello-horizontal 0.9s both;
+  }
 }
