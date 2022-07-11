@@ -60,6 +60,7 @@
 
   @include media(desktop) {
     min-width: 394px;
+    background: var(--secondary-bg-cl);
   }
 }
 
