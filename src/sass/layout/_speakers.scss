@@ -1,7 +1,13 @@
 .speakers {
-  padding-bottom: 8px;
-  @include media(tablet) {
+  position: relative;
+  @include media(mobile-only) {
     padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @include media(tablet-only) {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 .speakers__container {
@@ -11,10 +17,9 @@
   border-radius: 0px 0px 40px 40px;
 }
 .speakers__title {
-  @include media(mobile-only) {
-    padding-top: 8px;
-    position: relative;
-    top: -15px;
+  @include media(tablet) {
+    position: absolute;
+    left: calc(50% - 30px);
   }
 }
 .speakers__list {
@@ -24,14 +29,13 @@
   padding: 0;
   padding-top: 66px;
   gap: 20px;
-  flex-basis: calc((100% - 2 * 20px) / 2);
 
   @include media(tablet) {
     padding-top: 122px;
     gap: 32px;
   }
   @include media(desktop) {
-    padding-top: 178px;
+    padding-top: 220px;
     gap: 103px;
   }
 }
@@ -42,6 +46,15 @@
   flex-direction: column;
   align-items: center;
   padding: 16px 0;
+  flex-basis: calc((100% - 5 * 103px) / 4);
+
+  @include media(tablet-only) {
+    flex-basis: calc((100% - 3 * 32px) / 4);
+  }
+
+  @include media(mobile-only) {
+    flex-basis: calc((100% - 2 * 20px) / 2);
+  }
 }
 
 .speakers__card-title {
