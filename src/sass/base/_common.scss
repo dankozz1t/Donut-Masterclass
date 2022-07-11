@@ -53,6 +53,16 @@ img {
   text-decoration: none;
   cursor: pointer;
   color: currentColor;
+  transition: color var(--transition-time) var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-accent-cl);
+  }
+}
+
+.is-hidden {
+  display: none;
 }
 
 .no-scroll {
