@@ -76,3 +76,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+.footer-contacts__icon {
+  transition: fill var(--transition-time) var(--transition-cubic),
+    transform var(--transition-time) var(--transition-cubic);
+
+  .footer-contacts__link:hover &,
+  .footer-contacts__link:focus & {
+    fill: var(--secondary-accent-cl);
+    transform: scale(1.7) rotate(360deg);
+  }
+}
