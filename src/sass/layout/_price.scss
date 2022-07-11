@@ -109,6 +109,7 @@
 }
 
 .price__item {
+  display: flex;
   font-family: var(--secondary-font);
   @include font-size(18px, 22px);
 
