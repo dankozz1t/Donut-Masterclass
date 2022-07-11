@@ -12,27 +12,27 @@
     }
   }
 
-  @include media(tablet) {
-    background-image: url(../images/header/header_md.png);
-    background-repeat: no-repeat;
-    background-position: top right 102px;
+  // @include media(tablet-only) {
+  //   background-image: url(../images/header/header_md.png);
+  //   background-repeat: no-repeat;
+  //   background-position: top right 102px;
 
-    @include media(retina) {
-      background-image: url(../images/header/header_md@2x.png);
-      background-size: 380px 519px;
-    }
-  }
+  //   @include media(retina) {
+  //     background-image: url(../images/header/header_md@2x.png);
+  //     background-size: 380px 519px;
+  //   }
+  // }
 
-  @include media(desktop) {
-    background-image: url(../images/header/header_lg.png);
-    background-repeat: no-repeat;
-    background-position: top right;
+  // @include media(desktop) {
+  //   background-image: url(../images/header/header_lg.png);
+  //   background-repeat: no-repeat;
+  //   background-position: top right;
 
-    @include media(retina) {
-      background-image: url(../images/header/header_lg@2x.png);
-      background-size: 579px 661px;
-    }
-  }
+  //   @include media(retina) {
+  //     background-image: url(../images/header/header_lg@2x.png);
+  //     background-size: 579px 661px;
+  //   }
+  // }
 }
 
 .header__container {

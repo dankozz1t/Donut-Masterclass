@@ -2,7 +2,7 @@
   position: absolute;
   top: 16px;
   right: 20px;
-  z-index: 100;
+  z-index: 101;
 
   width: 30px;
   height: 16px;
@@ -37,10 +37,12 @@
 .menu {
   display: none;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
 
   background-color: var(--burger-bg-cl);
   backdrop-filter: blur(4px);
