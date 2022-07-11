@@ -1,9 +1,9 @@
-@import './base/common';
-@import './base/animation';
-
 @import './utils/variables';
 @import './vendors/mixin-media';
 @import './utils/mixin-font-size';
+
+@import './base/common';
+@import './base/animation';
 
 @import './components/button';
 @import './components/section-title';
