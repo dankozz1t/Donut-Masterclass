@@ -5,28 +5,32 @@
   }
 
   @include media(tablet) {
+    background-repeat: no-repeat;
+    background-position: 0% -10%;
+    background-attachment: scroll;
+  }
+
+  @include media(tablet-only) {
     padding-top: 20px;
     padding-bottom: 40px;
     background-image: url(../images/registration/registration1_md.png);
+    background-size: 200px;
+
+    @include media(retina) {
+      background-image: url(../images/registration/registration1_md@2x.png);
+    }
   }
-  @include media(retina) {
-    background-image: url(../images/registration/registration1_md@2x.png);
-  }
-  background-repeat: no-repeat;
-  background-position: 0% -5%;
-  background-attachment: scroll;
-  background-size: 196px 200px;
 
   @include media(desktop) {
     padding-top: 30px;
     padding-bottom: 90px;
     background-image: url(../images/registration/registration1_lg.png);
-    background-size: 196px 200px;
 
     @include media(retina) {
       background-image: url(../images/registration/registration1_lg@2x.png);
     }
-    background-position: 12% 10%;
+    background-position: 8% 10%;
+    background-size: 250px;
   }
 }
 
@@ -48,21 +52,26 @@
 }
 
 .registration__form {
-  width: 280px;
   margin-left: auto;
   margin-right: auto;
-  padding: 32px 7px;
 
   display: flex;
   flex-direction: column;
   text-align: center;
 
   background-color: #fffff9;
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-    4px 4px 4px rgba(171, 129, 108, 0.15);
-  border-radius: 150px 150px 0px 0px;
 
   animation: wobble-hor-top 1s both;
+
+  @include media(mobile-only) {
+    width: 280px;
+
+    padding: 32px 7px;
+
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+      4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0px 0px;
+  }
 
   @include media(tablet) {
     width: 704px;
@@ -79,39 +88,15 @@
   }
 }
 
-@keyframes wobble-hor-top {
-  0%,
-  100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
-  }
-  15% {
-    transform: translateX(-30px) rotate(6deg);
-  }
-  30% {
-    transform: translateX(15px) rotate(-6deg);
-  }
-  45% {
-    transform: translateX(-15px) rotate(3.6deg);
-  }
-  60% {
-    transform: translateX(9px) rotate(-2.4deg);
-  }
-  75% {
-    transform: translateX(-6px) rotate(1.2deg);
-  }
-}
-
 .block {
   @include media(tablet) {
     display: flex;
     flex-direction: row;
-    gap: 54px;
     align-items: center;
     justify-content: center;
   }
-  @include media(desktop) {
-    gap: 0;
+  @include media(tablet-only) {
+    gap: 54px;
   }
 }
 
@@ -119,11 +104,12 @@
   @include media(tablet) {
     display: flex;
     flex-direction: column;
+  }
+  @include media(tablet-only) {
     gap: 16px;
   }
 
   @include media(desktop) {
-    gap: 0;
     margin-left: 64px;
     margin-right: 24px;
   }
@@ -171,7 +157,7 @@
 
     @include media(desktop) {
       width: 166px;
-      top: 45%;
+      top: 50%;
     }
   }
 }
@@ -194,6 +180,22 @@
   }
 }
 
+.registration__group {
+  @include media(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+  @include media(mobile-only) {
+    gap: 22px;
+  }
+  @include media(tablet) {
+    gap: 16px;
+  }
+  @include media(desktop) {
+    gap: 14px;
+  }
+}
+
 .registration__button {
   margin-left: auto;
   margin-right: auto;
@@ -210,7 +212,6 @@
 
 .registration__input {
   width: 100%;
-  margin-bottom: 22px;
 
   background-color: #fffff9;
   color: rgba(171, 129, 108, 0.5);
@@ -218,13 +219,7 @@
   border-bottom: 1px solid #ab816c;
   outline: none;
 
-  @include media(tablet) {
-    margin-bottom: 0;
-  }
-  @include media(desktop) {
-    margin-bottom: 14px;
-  }
-  &:last-child {
+  @include media(tablet-only) {
     margin-bottom: 0;
   }
 }
