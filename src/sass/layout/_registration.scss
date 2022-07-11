@@ -181,10 +181,9 @@
 }
 
 .registration__group {
-  @include media(mobile) {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+
   @include media(mobile-only) {
     gap: 22px;
   }
