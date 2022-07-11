@@ -48,12 +48,6 @@
   border-bottom: 1px solid #ab816c;
   outline: none;
 
-  &:focus + .contact__label,
-  &:not(:placeholder-shown) + .contact__label {
-    transform: translateY(-15px);
-    font-size: 14px;
-  }
-
   @include media(tablet-only) {
     min-width: 336px;
   }
@@ -77,6 +71,12 @@
   left: 0;
   line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
+
+  .contact__input:focus + &,
+  .contact__input:not(:placeholder-shown) + & {
+    transform: translateY(-15px);
+    font-size: 14px;
+  }
 }
 
 .contact__input--second {
