@@ -10,17 +10,14 @@
     padding-bottom: 8px;
   }
 }
-.speakers__container {
+.speakers__background {
   background-color: var(--main-accent-cl);
   background-image: url(../images/speakers/speaker_wave.svg);
   background-repeat: no-repeat;
   border-radius: 0px 0px 40px 40px;
 }
 .speakers__title {
-  @include media(tablet) {
-    position: absolute;
-    left: calc(50% - 30px);
-  }
+  margin-bottom: 2px;
 }
 .speakers__list {
   display: flex;
