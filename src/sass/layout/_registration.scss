@@ -20,6 +20,7 @@
     padding-top: 30px;
     padding-bottom: 90px;
     background-image: url(../images/registration/registration1_lg.png);
+
     @include media(retina) {
       background-image: url(../images/registration/registration1_lg@2x.png);
     }
@@ -200,6 +201,7 @@
     margin-top: 0;
   }
 }
+
 .registration__field {
   position: relative;
 }
