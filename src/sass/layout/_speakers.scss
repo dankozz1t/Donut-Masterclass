@@ -1,36 +1,51 @@
 .speakers {
   position: relative;
+
   @include media(mobile-only) {
     padding-top: 8px;
     padding-bottom: 8px;
   }
 
   @include media(tablet-only) {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include media(desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
+
 .speakers__background {
   background-color: var(--main-accent-cl);
   background-image: url(../images/speakers/speaker_wave.svg);
   background-repeat: no-repeat;
   border-radius: 0px 0px 40px 40px;
 }
+
 .speakers__title {
   margin-bottom: 2px;
 }
+
 .speakers__list {
+  padding: 0;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  padding-top: 66px;
-  gap: 20px;
 
-  @include media(tablet) {
+  justify-content: center;
+
+  @include media(mobile-only) {
+    padding-top: 66px;
+    gap: 20px;
+  }
+
+  @include media(tablet-only) {
     padding-top: 122px;
     gap: 32px;
   }
+
   @include media(desktop) {
     padding-top: 220px;
     gap: 103px;
@@ -38,12 +53,17 @@
 }
 
 .speakers__item {
-  width: fit-content;
+  padding: 16px 0;
+  align-items: center;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 16px 0;
-  flex-basis: calc((100% - 5 * 103px) / 4);
+
+  width: fit-content;
+
+  @include media(mobile-only) {
+    flex-basis: calc((100% - 5 * 103px) / 4);
+  }
 
   @include media(tablet-only) {
     flex-basis: calc((100% - 3 * 32px) / 4);
@@ -55,31 +75,38 @@
 }
 
 .speakers__card-title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: center;
-  margin-top: 12px;
+
+  @include font-size(16px, 20px, 600);
+
+  @include media(mobile-only) {
+    margin-top: 12px;
+  }
+
   @include media(tablet-only) {
     margin-top: 20px;
   }
 }
 
 .speakers__text {
-  font-weight: 500;
-  line-height: 1.25;
   text-align: center;
-  margin-top: 12px;
-  font-size: 12px;
-  max-width: 130px;
-  @include media(tablet-only) {
-    max-width: 150px;
-    margin-top: 20px;
-    font-size: 14px;
+
+  @include font-size(12px, 15px, 500);
+
+  @include media(mobile-only) {
+    margin-top: 12px;
+
+    max-width: 130px;
   }
+
+  @include media(tablet-only) {
+    margin-top: 20px;
+
+    max-width: 150px;
+  }
+
   @include media(desktop) {
     max-width: 180px;
-    font-size: 16px;
   }
 }
 
@@ -88,6 +115,7 @@
     width: 152px;
     height: 152px;
   }
+
   @include media(desktop) {
     width: 181px;
     height: 181px;
