@@ -1,4 +1,4 @@
-.about-us .container {
+.about-us__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,10 @@
     justify-content: center;
   }
 }
-
+.about-us {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 .about-us__img {
   @include media(mobile-only) {
     margin-bottom: 16px;
