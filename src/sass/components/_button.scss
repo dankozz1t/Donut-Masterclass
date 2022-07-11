@@ -1,9 +1,9 @@
 .button {
-  width: 145px;
-  height: 40px;
-
   border-radius: 25px;
   border: none;
+  cursor: pointer;
+  width: 145px;
+  height: 40px;
 
   text-align: center;
 
@@ -15,7 +15,8 @@
   line-height: 1.28;
 
   transition: background-color var(--transition-time) var(--transition-cubic),
-    color var(--transition-time) var(--transition-cubic);
+    color var(--transition-time) var(--transition-cubic),
+    transform var(--transition-time) var(--transition-cubic);
 }
 
 .button__link {
@@ -30,4 +31,5 @@
 .button:focus {
   color: var(--secondary-accent-cl);
   background-color: var(--main-text-cl);
+  transform: scale(1.2);
 }
