@@ -1,32 +1,29 @@
 .registration {
-  background-color: antiquewhite;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  @include media(mobile-only) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
   @include media(tablet) {
     padding-top: 20px;
     padding-bottom: 40px;
-    background-image: url(../images/registration/registration1_md.png),
-      url(../images/registration/registration2_md.png);
+    background-image: url(../images/registration/registration1_md.png);
   }
   @include media(retina) {
-    background-image: url(../images/registration/registration1_md@2x.png),
-      url(../images/registration/registration2_md@2x.png);
+    background-image: url(../images/registration/registration1_md@2x.png);
   }
   background-repeat: no-repeat;
-  background-position: 0% -17%, right 0% top -295%;
+  background-position: 0% -17%;
   background-attachment: scroll;
 
   @include media(desktop) {
     padding-top: 30px;
     padding-bottom: 90px;
-    background-image: url(../images/registration/registration1_lg.png),
-      url(../images/registration/registration2_lg.png);
+    background-image: url(../images/registration/registration1_lg.png);
     @include media(retina) {
-      background-image: url(../images/registration/registration1_lg@2x.png),
-        url(../images/registration/registration2_lg@2x.png);
+      background-image: url(../images/registration/registration1_lg@2x.png);
     }
-    background-position: 9% 10%, right -4% top -40%;
+    background-position: 8% 10%;
   }
 }
 
@@ -47,7 +44,7 @@
   }
 }
 
-.form {
+.registration__form {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -135,6 +132,7 @@
     margin-bottom: 8px;
 
     border: 1px solid rgba(171, 129, 108, 0.5);
+    background-color: rgba(171, 129, 108, 0.5);
 
     @include media(tablet) {
       width: 154px;
@@ -178,16 +176,15 @@
   }
 }
 
-.form__input {
+.registration__input {
   width: 100%;
   margin-bottom: 22px;
 
   background-color: #fffff9;
   color: rgba(171, 129, 108, 0.5);
+  border: none;
   border-bottom: 1px solid #ab816c;
-  border-right: none;
-  border-left: none;
-  border-top: none;
+  outline: none;
 
   @include media(tablet) {
     margin-bottom: 0;
@@ -195,13 +192,16 @@
   @include media(desktop) {
     margin-bottom: 14px;
   }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.form__label {
+.registration__label {
   cursor: pointer;
 }
 
-.form__input::placeholder {
+.registration__input::placeholder {
   font-family: var(--secondary-font);
   @include font-size(16px, 20px);
   color: rgba(171, 129, 108, 0.5);
