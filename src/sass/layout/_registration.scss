@@ -175,6 +175,9 @@
     margin-top: 0;
   }
 }
+.registration__field {
+  position: relative;
+}
 
 .registration__input {
   width: 100%;
@@ -198,7 +201,15 @@
 }
 
 .registration__label {
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
   cursor: pointer;
+  .registration__input:focus + &,
+  .registration__input:not(:placeholder-shown) + & {
+    transform: translateY(-15px);
+    font-size: 14px;
+  }
 }
 
 .registration__input::placeholder {
