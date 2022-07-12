@@ -118,3 +118,29 @@ img {
     }
   }
 }
+
+.background-confetti {
+  background-repeat: no-repeat;
+
+  @include media(tablet-only) {
+    background-position: right calc(50% - 300px) bottom 185px;
+    background-size: 200px, 350px;
+
+    background-image: url('../images/registration/registration2_md.png');
+
+    @include media(retina) {
+      background-image: url('../images/registration/registration2_md@2x.png');
+    }
+  }
+
+  @include media(desktop) {
+    background-position: right calc(50% - 400px) bottom 185px;
+    background-size: 400px, 544px;
+
+    background-image: url('../images/registration/registration2_lg.png');
+
+    @include media(retina) {
+      background-image: url('../images/registration/registration2_lg@2x.png');
+    }
+  }
+}
