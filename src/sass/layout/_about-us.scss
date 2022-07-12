@@ -14,7 +14,7 @@
 
 .about-us {
   @include media(mobile-only) {
-    padding-top: 8px;
+    padding-top: 3px;
     padding-bottom: 8px;
   }
 
@@ -24,7 +24,7 @@
   }
 
   @include media(desktop) {
-    padding-top: 63px;
+    padding-top: 50px;
   }
 }
 
