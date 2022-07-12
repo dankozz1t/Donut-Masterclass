@@ -1,6 +1,8 @@
 $('.reviews__list').slick({
-  // normal options...
-  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+
+  infinite: false,
   arrows: false,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -13,20 +15,17 @@ $('.reviews__list').slick({
 
   focusOnSelect: true,
 
-  // the magic
   responsive: [
     {
       breakpoint: 1280,
       settings: {
         slidesToShow: 3,
-        infinite: true,
       },
     },
     {
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
-        infinite: true,
       },
     },
     {
@@ -42,4 +41,5 @@ $('.reviews__comment').slick({
   asNavFor: '.reviews__list',
   arrows: false,
   dots: true,
+  infinite: false,
 });

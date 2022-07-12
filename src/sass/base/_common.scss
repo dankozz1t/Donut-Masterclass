@@ -74,7 +74,7 @@ img {
   background-position: top, bottom;
 
   @include media(mobile-only) {
-    background-size: 100% 460px, 100% 1220px;
+    background-size: 100% 460px, 100% 1325px;
     background-position: right 0 top 0, right 0 bottom 211px;
 
     background-image: url('../images/background-images/spot-top-sm.png'),
@@ -87,7 +87,7 @@ img {
   }
 
   @include media(tablet-only) {
-    background-size: 380px 519px, 100% 622px, 100% 1330px;
+    background-size: 380px 519px, 100% 622px, 100% 1200px;
     background-position: top right 102px, right 0 top 0, right 0 bottom 105px;
 
     background-image: url('../images/header/header_md.png'),
@@ -102,7 +102,7 @@ img {
   }
 
   @include media(desktop) {
-    background-size: 180px auto, 579px 661px, 100% 1035px, 100% 1800px;
+    background-size: 180px auto, 579px 661px, 100% 1035px, 100% 1675px;
     background-position: calc(50% - 620px) 501px, top right, right 0 top 0,
       right 0 bottom 105px;
 
