@@ -2,36 +2,61 @@
   @include media(mobile-only) {
     padding-top: 16px;
     padding-bottom: 16px;
+    position: relative;
   }
-
-  @include media(tablet) {
-    background-repeat: no-repeat;
-    background-position: 0% -10%;
-    background-attachment: scroll;
-  }
-
-  @include media(tablet-only) {
-    padding-top: 20px;
-    padding-bottom: 40px;
+  &::before {
+    display: block;
+    content: '';
+    width: 250px;
+    top: 0;
+    left: 0;
+    position: absolute;
     background-image: url(../images/registration/registration1_md.png);
-    background-size: 200px;
+    background-repeat: no-repeat;
+    // background-position: 100% -10%;
+    // background-attachment: scroll;
+    // background-size: 200px;
+    @include media(desktop) {
+      padding-top: 30px;
+      padding-bottom: 90px;
+      background-image: url(../images/registration/registration1_lg.png);
 
-    @include media(retina) {
-      background-image: url(../images/registration/registration1_md@2x.png);
+      @include media(retina) {
+        background-image: url(../images/registration/registration1_lg@2x.png);
+      }
+      // background-position: 8% 10%;
+      // background-size: 250px;
     }
   }
 
-  @include media(desktop) {
-    padding-top: 30px;
-    padding-bottom: 90px;
-    background-image: url(../images/registration/registration1_lg.png);
+  // @include media(tablet) {
+  //   background-repeat: no-repeat;
+  //   background-position: 0% -10%;
+  //   background-attachment: scroll;
+  // }
 
-    @include media(retina) {
-      background-image: url(../images/registration/registration1_lg@2x.png);
-    }
-    background-position: 8% 10%;
-    background-size: 250px;
-  }
+  // @include media(tablet-only) {
+  //   padding-top: 20px;
+  //   padding-bottom: 40px;
+  //   background-image: url(../images/registration/registration1_md.png);
+  //   background-size: 200px;
+
+  //   @include media(retina) {
+  //     background-image: url(../images/registration/registration1_md@2x.png);
+  //   }
+  // }
+
+  // @include media(desktop) {
+  //   padding-top: 30px;
+  //   padding-bottom: 90px;
+  //   background-image: url(../images/registration/registration1_lg.png);
+
+  //   @include media(retina) {
+  //     background-image: url(../images/registration/registration1_lg@2x.png);
+  //   }
+  //   background-position: 8% 10%;
+  //   background-size: 250px;
+  // }
 }
 
 .tablet__title {
@@ -86,6 +111,49 @@
     width: 822px;
     padding: 40px 105px;
   }
+  // &::before {
+  //   content: '';
+  //   width: 250px;
+  //   top: 0;
+  //   left: 0;
+  //   position: absolute;
+  //   background-image: url(../images/registration/registration1_md.png);
+  //   background-repeat: no-repeat;
+  //   // background-position: 100% -10%;
+  //   // background-attachment: scroll;
+  //   // background-size: 200px;
+  //   @include media(desktop) {
+  //     padding-top: 30px;
+  //     padding-bottom: 90px;
+  //     background-image: url(../images/registration/registration1_lg.png);
+
+  //     @include media(retina) {
+  //       background-image: url(../images/registration/registration1_lg@2x.png);
+  //     }
+  //     // background-position: 8% 10%;
+  //     background-size: 250px;
+  //   }
+  // }
+
+  // &::before {
+  //   content: '';
+  //   background-image: url(../images/registration/registration1_md.png);
+  //   background-repeat: no-repeat;
+  //   background-position: 0% -10%;
+  //   background-attachment: scroll;
+  //   background-size: 200px;
+  //   @include media(desktop) {
+  //     padding-top: 30px;
+  //     padding-bottom: 90px;
+  //     background-image: url(../images/registration/registration1_lg.png);
+
+  //     @include media(retina) {
+  //       background-image: url(../images/registration/registration1_lg@2x.png);
+  //     }
+  //     background-position: 8% 10%;
+  //     background-size: 250px;
+  //   }
+  // }
 }
 
 .block {
