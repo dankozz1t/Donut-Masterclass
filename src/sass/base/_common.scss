@@ -102,7 +102,7 @@ img {
   }
 
   @include media(desktop) {
-    background-size: auto auto, 579px 661px, 100% 1035px, 100% 1800px;
+    background-size: auto, 579px 661px, 100% 1035px, 100% 1800px;
     background-position: calc(50% - 620px) 501px, top right, right 0 top 0,
       right 0 bottom 105px;
 
@@ -112,7 +112,8 @@ img {
       url('../images/background-images/spot-bot-lg.png');
 
     @include media(retina) {
-      background-image: url('../images/header/header_lg@2x.png'),
+      background-image: url('../images/about-us/about-us3_lg.png'),
+        url('../images/header/header_lg@2x.png'),
         url('../images/background-images/spot-top-lg@2x.png'),
         url('../images/background-images/spot-bot-lg@2x.png');
     }
