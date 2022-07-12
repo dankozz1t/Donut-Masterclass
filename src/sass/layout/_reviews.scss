@@ -29,7 +29,6 @@
     justify-content: space-evenly;
 
     max-width: 1030px;
-    // height: 600px;
   }
 }
 
@@ -51,9 +50,6 @@
   display: block;
   margin-left: 16px;
   margin-right: 16px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 
   transition: transform var(--transition-time) var(--transition-cubic);
 
@@ -68,73 +64,40 @@
       animation-iteration-count: 1;
     }
   }
-
-  // &.slick-current.slick-active {
-  //   outline: 2px solid red;
-  //   width: 394px;
-  //   height: 394px;
-  // }
-}
-
-// .slick-current.img__default {
-//   width: 394px;
-//   border: 20%;
-// }
-
-// &:nth-child(2) {
-//   @include media(tablet) {
-//     justify-content: flex-end;
-//   }
-// }
-
-// &:nth-child(2n + 1) {
-//   @include media(mobile-only) {
-//     display: none;
-//   }
-// }
-
-.img__default {
-  width: 288px;
-  height: 288px;
-}
-
-.slick-current .img__default {
-  // display: block;
-
-  width: 400px;
-  height: 400px;
-  padding-top: 30px;
 }
 
 .reviews__img {
   margin-bottom: 8px;
-  // margin-left: auto;
-  // margin-right: auto;
 
-  // .reviews__item:nth-child(2) & {
-  //   @include media(tablet-only) {
-  //     width: 336px;
-  //     height: 336px;
-  //   }
+  @include media(tablet-only) {
+    width: 152px;
+    height: 152px;
+  }
 
-  //   @include media(desktop) {
-  //     width: 394px;
-  //     height: 394px;
-  //   }
-  // }
-
-  // .reviews__item:nth-child(2n + 1) & {
-  //   @include media(desktop) {
-  //     width: 288px;
-  //     height: 288px;
-  //   }
-  // }
+  @include media(desktop) {
+    width: 288px;
+    height: 288px;
+  }
 }
 
-// .img__active {
-//   width: 500px;
-//   background-color: tomato;
-// }
+.slick-current .reviews__img {
+  @include media(mobile-only) {
+    width: 280px;
+    height: 280px;
+  }
+
+  @include media(tablet-only) {
+    width: 336px;
+    height: 336px;
+    padding-top: 30px;
+  }
+
+  @include media(desktop) {
+    width: 394px;
+    height: 394px;
+    padding-top: 60px;
+  }
+}
 
 .reviews__rate {
   display: flex;
@@ -201,20 +164,3 @@
     display: contents;
   }
 }
-
-// .reviews__pagination {
-//   display: block;
-//   text-align: center;
-
-//   color: var(--secondary-accent-cl);
-
-//   &::before {
-//     content: '\2014';
-//     margin-right: 10px;
-//   }
-
-//   &::after {
-//     content: '\2014';
-//     margin-left: 10px;
-//   }
-// }
