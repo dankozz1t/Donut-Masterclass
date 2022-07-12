@@ -87,26 +87,31 @@ img {
   }
 
   @include media(tablet-only) {
-    background-size: 100% 622px, 100% 1456px;
-    background-position: right 0 top 0, right 0 bottom 105px;
+    background-size: 380px 519px, 100% 622px, 100% 1456px;
+    background-position: top right 102px, right 0 top 0, right 0 bottom 105px;
 
-    background-image: url('../images/background-images/spot-top-md.png'),
+    background-image: url('../images/header/header_md.png'),
+      url('../images/background-images/spot-top-md.png'),
       url('../images/background-images/spot-bot-md.png');
 
     @include media(retina) {
-      background-image: url('../images/background-images/spot-top-md@2x.png'),
+      background-image: url('../images/header/header_md@2x.png'),
+        url('../images/background-images/spot-top-md@2x.png'),
         url('../images/background-images/spot-bot-md@2x.png');
     }
   }
 
   @include media(desktop) {
-    background-size: 100% 1035px, 100% 2030px;
+    background-size: 579px 661px, 100% 1035px, 100% 1800px;
+    background-position: top right, right 0 top 0, right 0 bottom 105px;
 
-    background-image: url('../images/background-images/spot-top-lg.png'),
+    background-image: url('../images/header/header_lg.png'),
+      url('../images/background-images/spot-top-lg.png'),
       url('../images/background-images/spot-bot-lg.png');
 
     @include media(retina) {
-      background-image: url('../images/background-images/spot-top-lg@2x.png'),
+      background-image: url('../images/header/header_lg@2x.png'),
+        url('../images/background-images/spot-top-lg@2x.png'),
         url('../images/background-images/spot-bot-lg@2x.png');
     }
   }
