@@ -102,10 +102,12 @@ img {
   }
 
   @include media(desktop) {
-    background-size: 579px 661px, 100% 1035px, 100% 1800px;
-    background-position: top right, right 0 top 0, right 0 bottom 105px;
+    background-size: auto auto, 579px 661px, 100% 1035px, 100% 1800px;
+    background-position: calc(50% - 620px) 501px, top right, right 0 top 0,
+      right 0 bottom 105px;
 
-    background-image: url('../images/header/header_lg.png'),
+    background-image: url('../images/about-us/about-us3_lg.png'),
+      url('../images/header/header_lg.png'),
       url('../images/background-images/spot-top-lg.png'),
       url('../images/background-images/spot-bot-lg.png');
 
