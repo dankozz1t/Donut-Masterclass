@@ -59,7 +59,7 @@
   flex-direction: column;
   text-align: center;
 
-  background-color: #fffff9;
+  background-color: var(--secondary-bg-cl);
 
   animation: wobble-hor-top 1s both;
 
@@ -76,7 +76,7 @@
   @include media(tablet) {
     width: 704px;
     padding: 40px 61px;
-    background: #fffff9;
+    background: var(--secondary-bg-cl);
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
       4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px;
@@ -145,8 +145,8 @@
     width: 264px;
     margin-bottom: 8px;
 
-    border: 1px solid rgba(171, 129, 108, 0.5);
-    background-color: rgba(171, 129, 108, 0.5);
+    border: 1px solid var(--placeholder-text-cl);
+    background-color: var(--placeholder-text-cl);
 
     @include media(tablet) {
       width: 154px;
@@ -212,10 +212,11 @@
 .registration__input {
   width: 100%;
 
-  background-color: #fffff9;
-  color: rgba(171, 129, 108, 0.5);
+  color: var(--main-text-cl);
+  background-color: var(--secondary-bg-cl);
+
   border: none;
-  border-bottom: 1px solid #ab816c;
+  border-bottom: 1px solid var(--secondary-accent-cl);
   outline: none;
 
   @include media(tablet-only) {
@@ -231,7 +232,7 @@
 
   font-family: var(--secondary-font);
   @include font-size(16px, 20px);
-  color: rgba(171, 129, 108, 0.5);
+  color: var(--placeholder-text-cl);
   transition: transform var(--transition-time) var(--transition-cubic);
 
   .registration__input:focus + &,

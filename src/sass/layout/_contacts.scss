@@ -47,8 +47,11 @@
 
 .contact__input {
   height: 20px;
+
+  color: var(--main-text-cl);
+
   border: none;
-  border-bottom: 1px solid #ab816c;
+  border-bottom: 1px solid var(--secondary-accent-cl);
   outline: none;
 
   @include media(mobile-only) {
@@ -80,7 +83,7 @@
   top: 0;
   left: 0;
   line-height: 1.25;
-  color: rgba(171, 129, 108, 0.5);
+  color: var(--placeholder-text-cl);
 
   .contact__input:focus + &,
   .contact__input:not(:placeholder-shown) + & {
