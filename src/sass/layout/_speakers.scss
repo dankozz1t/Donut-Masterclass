@@ -112,7 +112,7 @@
 }
 
 .speakers__img {
-  animation: rotate-center 0.6s ease-in-out both;
+  animation: pulsate-fwd 2s ease-in-out infinite both;
 
   @include media(tablet-only) {
     width: 152px;
@@ -122,14 +122,5 @@
   @include media(desktop) {
     width: 181px;
     height: 181px;
-  }
-}
-
-@keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
