@@ -22,3 +22,75 @@
     transform: scale3d(1, 1, 1);
   }
 }
+
+// animation: wobble-hor-top 1s both;
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+// animation: rotate-scale-down 3s linear infinite both;
+@keyframes rotate-scale-down {
+  0% {
+    transform: translateY(-50%) scale(1) rotateZ(0);
+  }
+  50% {
+    transform: translateY(-50%) scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    transform: translateY(-50%) scale(1) rotateZ(360deg);
+  }
+}
+
+// animation: text-shadow-drop-center 0.6s both;
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+// animation: heartbeat 1.5s ease-in-out infinite both;
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}

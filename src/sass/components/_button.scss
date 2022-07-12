@@ -4,18 +4,30 @@
 
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 
   text-align: center;
 
+  font-family: var(--main-font);
+  @include font-size(18px, 23px);
+
   color: var(--button-text-cl);
   background-color: var(--secondary-accent-cl);
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.28;
 
   transition: background-color var(--transition-time) var(--transition-cubic),
-    color var(--transition-time) var(--transition-cubic);
+    color var(--transition-time) var(--transition-cubic),
+    transform var(--transition-time) var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--button-text-cl);
+    background-color: var(--button-hover-cl);
+
+    animation: jello-horizontal 0.9s both;
+
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+      1px 4px 6px rgb(0 0 0 / 16%);
+  }
 }
 
 .button__link {
@@ -24,10 +36,4 @@
   align-items: center;
 
   text-decoration: none;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--secondary-accent-cl);
-  background-color: var(--main-text-cl);
 }

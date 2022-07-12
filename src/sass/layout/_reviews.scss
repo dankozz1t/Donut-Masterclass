@@ -93,6 +93,11 @@
   }
 }
 
+.img__active {
+  width: 500px;
+  background-color: tomato;
+}
+
 .reviews__rate {
   display: flex;
   gap: 4px;
