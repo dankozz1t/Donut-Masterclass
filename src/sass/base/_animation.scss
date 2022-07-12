@@ -46,3 +46,17 @@
     transform: translateX(-6px) rotate(1.2deg);
   }
 }
+
+// animation: rotate-scale-down 3s linear infinite both;
+
+@keyframes rotate-scale-down {
+  0% {
+    transform: translateY(-50%) scale(1) rotateZ(0);
+  }
+  50% {
+    transform: translateY(-50%) scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    transform: translateY(-50%) scale(1) rotateZ(360deg);
+  }
+}
