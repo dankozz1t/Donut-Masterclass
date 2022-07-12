@@ -58,7 +58,9 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    @include media(tablet) {
+      transform: scale(1.1);
+    }
   }
 
   transition: transform var(--transition-time) var(--transition-cubic);
