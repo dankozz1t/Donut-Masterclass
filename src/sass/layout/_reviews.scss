@@ -8,19 +8,27 @@
 
 .reviews__list {
   display: flex;
+  margin: 0 auto;
 
   @include media(mobile-only) {
     flex-direction: column;
+
+    max-width: 320px;
+  }
+
+  @include media(tablet) {
+    max-width: 758px;
   }
 
   @include media(tablet-only) {
     justify-content: space-between;
-    height: 466px;
+    // height: 466px;
   }
 
   @include media(desktop) {
     justify-content: space-evenly;
-    height: 600px;
+
+    max-width: 1030px;
   }
 }
 
@@ -39,21 +47,9 @@
 }
 
 .reviews__item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  &:nth-child(2) {
-    @include media(tablet) {
-      justify-content: flex-end;
-    }
-  }
-
-  &:nth-child(2n + 1) {
-    @include media(mobile-only) {
-      display: none;
-    }
-  }
+  display: block;
+  margin-left: 16px;
+  margin-right: 16px;
 
   transition: transform var(--transition-time) var(--transition-cubic);
 
@@ -73,29 +69,34 @@
 .reviews__img {
   margin-bottom: 8px;
 
-  .reviews__item:nth-child(2) & {
-    @include media(tablet-only) {
-      width: 336px;
-      height: 336px;
-    }
-
-    @include media(desktop) {
-      width: 394px;
-      height: 394px;
-    }
+  @include media(tablet-only) {
+    width: 152px;
+    height: 152px;
   }
 
-  .reviews__item:nth-child(2n + 1) & {
-    @include media(desktop) {
-      width: 288px;
-      height: 288px;
-    }
+  @include media(desktop) {
+    width: 288px;
+    height: 288px;
   }
 }
 
-.img__active {
-  width: 500px;
-  background-color: tomato;
+.slick-current .reviews__img {
+  @include media(mobile-only) {
+    width: 280px;
+    height: 280px;
+  }
+
+  @include media(tablet-only) {
+    width: 336px;
+    height: 336px;
+    padding-top: 30px;
+  }
+
+  @include media(desktop) {
+    width: 394px;
+    height: 394px;
+    padding-top: 60px;
+  }
 }
 
 .reviews__rate {
@@ -130,19 +131,36 @@
   text-align: center;
 }
 
-.reviews__pagination {
-  display: block;
-  text-align: center;
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
 
-  color: var(--secondary-accent-cl);
-
+  &::after,
   &::before {
-    content: '\2014';
-    margin-right: 10px;
+    content: '';
+    width: 35px;
+    height: 1px;
+    background-color: #ab816c;
   }
+}
+
+.slick-dots > li > button {
+  background-color: transparent;
+  border: none;
+  line-height: calc(20 / 16);
+  color: #ab816c;
 
   &::after {
-    content: '\2014';
-    margin-left: 10px;
+    content: '/5';
+  }
+}
+.slick-dots > li {
+  display: none;
+
+  &.slick-active {
+    display: contents;
   }
 }
