@@ -112,6 +112,8 @@
 }
 
 .speakers__img {
+  animation: pulsate-fwd 2s ease-in-out infinite both;
+
   @include media(tablet-only) {
     width: 152px;
     height: 152px;
