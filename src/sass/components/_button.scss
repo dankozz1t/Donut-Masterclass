@@ -1,18 +1,18 @@
 .button {
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
   width: 145px;
   height: 40px;
 
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+
   text-align: center;
+
+  font-family: var(--main-font);
+  @include font-size(18px, 23px);
 
   color: var(--button-text-cl);
   background-color: var(--secondary-accent-cl);
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.28;
 
   transition: background-color var(--transition-time) var(--transition-cubic),
     color var(--transition-time) var(--transition-cubic),
@@ -22,6 +22,7 @@
   &:focus {
     color: var(--button-text-cl);
     background-color: var(--secondary-accent-cl);
+
     animation: jello-horizontal 0.9s both;
   }
 }
