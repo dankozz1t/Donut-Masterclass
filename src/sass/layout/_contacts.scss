@@ -82,6 +82,8 @@
   line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
 
+  transition: transform var(--transition-time) var(--transition-cubic);
+
   .contact__input:focus + &,
   .contact__input:not(:placeholder-shown) + & {
     transform: translateY(-15px);
