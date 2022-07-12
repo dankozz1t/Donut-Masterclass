@@ -46,3 +46,13 @@
     transform: translateX(-6px) rotate(1.2deg);
   }
 }
+
+// animation: text-shadow-drop-center 0.6s both;
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
