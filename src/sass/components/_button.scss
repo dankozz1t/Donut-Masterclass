@@ -1,9 +1,9 @@
 .button {
-  width: 145px;
-  height: 40px;
-
   border-radius: 25px;
   border: none;
+  cursor: pointer;
+  width: 145px;
+  height: 40px;
 
   text-align: center;
 
@@ -15,7 +15,15 @@
   line-height: 1.28;
 
   transition: background-color var(--transition-time) var(--transition-cubic),
-    color var(--transition-time) var(--transition-cubic);
+    color var(--transition-time) var(--transition-cubic),
+    transform var(--transition-time) var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--button-text-cl);
+    background-color: var(--secondary-accent-cl);
+    animation: jello-horizontal 0.9s both;
+  }
 }
 
 .button__link {
@@ -24,10 +32,4 @@
   align-items: center;
 
   text-decoration: none;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--secondary-accent-cl);
-  background-color: var(--main-text-cl);
 }

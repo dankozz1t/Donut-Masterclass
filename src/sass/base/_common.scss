@@ -68,3 +68,46 @@ img {
 .no-scroll {
   overflow: hidden;
 }
+
+.background-images {
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+
+  @include media(mobile-only) {
+    background-size: 100% 460px, 100% 1303px;
+    background-position: right 0 top 0, right 0 bottom 211px;
+
+    background-image: url('../images/background-images/spot-top-sm.png'),
+      url('../images/background-images/spot-bot-sm.png');
+
+    @include media(retina) {
+      background-image: url('../images/background-images/spot-top-sm@2x.png'),
+        url('../images/background-images/spot-bot-sm.png');
+    }
+  }
+
+  @include media(tablet-only) {
+    background-size: 100% 622px, 100% 1456px;
+    background-position: right 0 top 0, right 0 bottom 105px;
+
+    background-image: url('../images/background-images/spot-top-md.png'),
+      url('../images/background-images/spot-bot-md.png');
+
+    @include media(retina) {
+      background-image: url('../images/background-images/spot-top-md@2x.png'),
+        url('../images/background-images/spot-bot-md@2x.png');
+    }
+  }
+
+  @include media(desktop) {
+    background-size: 100% 1035px, 100% 2030px;
+
+    background-image: url('../images/background-images/spot-top-lg.png'),
+      url('../images/background-images/spot-bot-lg.png');
+
+    @include media(retina) {
+      background-image: url('../images/background-images/spot-top-lg@2x.png'),
+        url('../images/background-images/spot-bot-lg@2x.png');
+    }
+  }
+}
