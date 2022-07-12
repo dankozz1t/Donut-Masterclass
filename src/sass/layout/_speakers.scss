@@ -112,6 +112,8 @@
 }
 
 .speakers__img {
+  animation: 4s linear 0s infinite alternate rotete_img;
+
   @include media(tablet-only) {
     width: 152px;
     height: 152px;
@@ -120,5 +122,15 @@
   @include media(desktop) {
     width: 181px;
     height: 181px;
+  }
+}
+
+@keyframes rotete_img {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(180deg);
   }
 }
