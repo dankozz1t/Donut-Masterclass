@@ -4,36 +4,42 @@ $('.reviews__list').slick({
   arrows: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  // focusOnSelect: true,
-  // centerMode: true,
+
+  centerMode: true,
+  centerPadding: '0px',
+
+  asNavFor: '.reviews__comment',
+  variableWidth: true,
+
+  focusOnSelect: true,
 
   // the magic
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1280,
       settings: {
         slidesToShow: 3,
         infinite: true,
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
-        // dots: true,
+        infinite: true,
       },
     },
     {
-      breakpoint: 300,
-      settings: 'unslick', // destroys slick
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      },
     },
   ],
 });
-// $('.reviews__list').on('beforeChange', (e, slick, currSlide, nextSlide) => {
-//   if (currSlide === nextSlide) {
-//     return;
-//   }
-//   // $('[data-reviews]').addClass('img__active');
-//   $('[data-reviews]').addClass('img__active');
-//   console.log($(`[data-slide]`));
-// });
+
+$('.reviews__comment').slick({
+  asNavFor: '.reviews__list',
+  arrows: false,
+  dots: true,
+});
