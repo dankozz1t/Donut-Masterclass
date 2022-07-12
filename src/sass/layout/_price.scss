@@ -42,9 +42,7 @@
 }
 .price__card {
   position: relative;
-  @include media(mobile-only) {
-    width: 280px;
-  }
+
   padding: 20px 20px;
 
   background: var(--main-accent-cl);
@@ -56,6 +54,19 @@
 
   @include media(retina) {
     background-image: url(../images/price/leaks_sm@2x.png);
+  }
+
+  &:hover,
+  &:focus {
+    @include media(tablet) {
+      transform: scale(1.1);
+    }
+  }
+
+  transition: transform var(--transition-time) var(--transition-cubic);
+
+  @include media(mobile-only) {
+    width: 280px;
   }
 
   @include media(tablet) {
@@ -143,72 +154,64 @@
   margin-right: auto;
 }
 
-.price__image-one {
+.price__image {
   display: none;
   @include media(desktop) {
     display: block;
     position: absolute;
+  }
+
+  .price__card:hover &,
+  .price__card:focus & {
+    animation: jello-horizontal 1.2s infinite both;
+  }
+}
+
+.price__image--one {
+  @include media(desktop) {
     top: 48%;
     right: 0;
     transform: translateX(-20%);
   }
 }
 
-.price__image-two {
-  display: none;
+.price__image--two {
   @include media(desktop) {
-    display: block;
-    position: absolute;
     left: 0;
     top: 65%;
   }
 }
 
-.price__image-three {
-  display: none;
+.price__image--three {
   @include media(desktop) {
-    display: block;
-    position: absolute;
     left: 60%;
     top: 65%;
   }
 }
 
-.price__image-four {
-  display: none;
+.price__image--four {
   @include media(desktop) {
-    display: block;
-    position: absolute;
     left: 0;
     top: 76%;
   }
 }
-.price__image-five {
-  display: none;
+.price__image--five {
   @include media(desktop) {
-    display: block;
-    position: absolute;
     top: 60%;
     right: 0;
   }
 }
 
-.price__image-six {
-  display: none;
+.price__image--six {
   @include media(desktop) {
-    display: block;
-    position: absolute;
     left: 0;
     bottom: 0;
     transform: translateX(75%);
   }
 }
 
-.price__image-seven {
-  display: none;
+.price__image--seven {
   @include media(desktop) {
-    display: block;
-    position: absolute;
     top: 75%;
     right: 0;
   }

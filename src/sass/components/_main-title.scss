@@ -1,9 +1,11 @@
 .main-title {
+  width: 224px;
+
   font-family: var(--main-font);
-  color: var(--main-text-cl);
   @include font-size(30px, 38px);
 
-  width: 224px;
+  color: var(--main-text-cl);
+  animation: text-shadow-drop-center 0.6s both;
 
   @include media(mobile-only) {
     text-align: center;
