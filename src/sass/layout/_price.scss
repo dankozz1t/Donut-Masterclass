@@ -161,6 +161,10 @@
 }
 
 .price__image {
+  @include media(not-desktop) {
+    display: none;
+  }
+
   @include media(desktop) {
     display: block;
     position: absolute;
@@ -175,8 +179,7 @@
 .price__image--one {
   @include media(desktop) {
     top: 48%;
-    right: 0;
-    transform: translateX(-20%);
+    right: 24px;
   }
 }
 
@@ -209,9 +212,8 @@
 
 .price__image--six {
   @include media(desktop) {
-    left: 0;
+    left: 44px;
     bottom: 0;
-    transform: translateX(75%);
   }
 }
 

@@ -16,42 +16,88 @@
             <li class="price__item">fry and glaze donuts</li>
           </ul>
         </div>
-        <img
-          class="price__image price__image--one"
-          srcset="
-            ./images/price/price1_lg.png    1x,
-            ./images/price/price1_lg@2x.png 2x
-          "
-          src="./images/price/price1_lg.png"
-          alt="striped-donut"
-          width="66"
-          height="73"
-          loading="lazy"
-        />
-        <img
-          class="price__image price__image--two"
-          srcset="
-            ./images/price/price2_lg.png    1x,
-            ./images/price/price2_lg@2x.png 2x
-          "
-          src="./images/price/price2_lg.png"
-          alt="donut with sprinkles"
-          width="66"
-          height="73"
-          loading="lazy"
-        />
-        <img
-          class="price__image price__image--three"
-          srcset="
-            ./images/price/price3_lg.png    1x,
-            ./images/price/price3_lg@2x.png 2x
-          "
-          src="./images/price/price3_lg.png"
-          alt="chokolate donut"
-          width="66"
-          height="73"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/price/price1_lg.webp    1x,
+              ./images/price/price1_lg@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/price/price1_lg.png    1x,
+              ./images/price/price1_lg@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            class="price__image price__image--one"
+            src="./images/price/price1_lg.png"
+            alt="striped-donut"
+            width="66"
+            height="73"
+            loading="lazy"
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ./images/price/price2_lg.webp    1x,
+              ./images/price/price2_lg@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/price/price2_lg.png    1x,
+              ./images/price/price2_lg@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            class="price__image price__image--two"
+            src="./images/price/price2_lg.png"
+            alt="donut with sprinkles"
+            width="66"
+            height="73"
+            loading="lazy"
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ./images/price/price3_lg.webp    1x,
+              ./images/price/price3_lg@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/price/price3_lg.png    1x,
+              ./images/price/price3_lg@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            media="(min-width: 1200px)"
+            class="price__image price__image--three"
+            src="./images/price/price3_lg.png"
+            alt="chokolate donut"
+            width="66"
+            height="73"
+            loading="lazy"
+          />
+        </picture>
+
         <a class="button price__button button__link link" href="#registration"
           >Register</a
         >
@@ -74,30 +120,58 @@
             </li>
           </ul>
         </div>
-        <img
-          class="price__image price__image--four"
-          srcset="
-            ./images/price/price1_lg.png    1x,
-            ./images/price/price1_lg@2x.png 2x
-          "
-          src="./images/price/price1_lg.png"
-          alt="striped-donut"
-          width="66"
-          height="73"
-          loading="lazy"
-        />
-        <img
-          class="price__image price__image--five"
-          srcset="
-            ./images/price/price2_lg.png    1x,
-            ./images/price/price2_lg@2x.png 2x
-          "
-          src="./images/price/price2_lg.png"
-          alt="donut with sprinkles"
-          width="66"
-          height="73"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/price/price1_lg.webp    1x,
+              ./images/price/price1_lg@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/price/price1_lg.png    1x,
+              ./images/price/price1_lg@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            class="price__image price__image--four"
+            src="./images/price/price1_lg.png"
+            alt="striped-donut"
+            width="66"
+            height="73"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              ./images/price/price2_lg.webp    1x,
+              ./images/price/price2_lg@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/price/price2_lg.png    1x,
+              ./images/price/price2_lg@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            class="price__image price__image--five"
+            src="./images/price/price2_lg.png"
+            alt="donut with sprinkles"
+            width="66"
+            height="73"
+            loading="lazy"
+          />
+        </picture>
         <a class="price__button button button__link link" href="#registration"
           >Register</a
         >
@@ -126,29 +200,58 @@
             </li>
           </ul>
         </div>
-        <img
-          class="price__image price__image--six"
-          srcset="
-            ./images/price/price1_lg.png    1x,
-            ./images/price/price1_lg@2x.png 2x
-          "
-          src="./images/price/price1_lg.png"
-          alt="striped-donut"
-          width="66"
-          height="73"
-        />
-        <img
-          class="price__image price__image--seven"
-          srcset="
-            ./images/price/price2_lg.png    1x,
-            ./images/price/price2_lg@2x.png 2x
-          "
-          src="./images/price/price2_lg.png"
-          alt="donut with sprinkles"
-          width="66"
-          height="73"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/price/price1_lg.webp    1x,
+              ./images/price/price1_lg@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/price/price1_lg.png    1x,
+              ./images/price/price1_lg@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            class="price__image price__image--six"
+            src="./images/price/price1_lg.png"
+            alt="striped-donut"
+            width="66"
+            height="73"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              ./images/price/price2_lg.webp    1x,
+              ./images/price/price2_lg@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/price/price2_lg.png    1x,
+              ./images/price/price2_lg@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            class="price__image price__image--seven"
+            src="./images/price/price2_lg.png"
+            alt="donut with sprinkles"
+            width="66"
+            height="73"
+            loading="lazy"
+          />
+        </picture>
         <a class="button price__button button__link link" href="#registration"
           >Register</a
         >
