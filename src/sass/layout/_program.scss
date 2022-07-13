@@ -1,6 +1,8 @@
 .program {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  @include media(mobile-only) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 
   @include media(tablet-only) {
     padding-top: 20px;
@@ -37,7 +39,9 @@
 }
 
 .program__title {
-  margin-bottom: 8px;
+  @include media(mobile-only) {
+    margin-bottom: 8px;
+  }
 
   @include media(tablet) {
     margin-bottom: 16px;
@@ -50,7 +54,9 @@
 }
 
 .program__text {
-  margin-bottom: 8px;
+  @include media(mobile-only) {
+    margin-bottom: 8px;
+  }
 
   @include media(desktop) {
     margin-bottom: 20px;
@@ -83,9 +89,10 @@
 
 .program__button {
   margin-top: 16px;
+
   font-family: var(--main-font);
-  font-size: 18px;
-  line-height: 1.28;
+  @include font-size(18px, 23px);
+
   text-align: center;
   border: none;
   color: var(--secondary-accent-cl);
@@ -103,18 +110,24 @@
 .program-card__list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 280px;
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
 
+  @include media(mobile-only) {
+    max-width: 280px;
+    padding-top: 35px;
+  }
+
   @include media(tablet) {
     max-width: 336px;
+    padding-top: 20px;
     justify-content: space-between;
   }
 
   @include media(desktop) {
     min-width: 500px;
+    padding-top: 45px;
   }
 }
 
@@ -122,27 +135,40 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 130px;
-  height: 165px;
+
   text-align: center;
 
-  &:nth-child(2n + 1) {
-    margin-bottom: 24px;
-    margin-right: 20px;
-  }
+  @include media(mobile-only) {
+    &:nth-child(2n + 1) {
+      margin-bottom: 64px;
+      margin-right: 20px;
+    }
 
-  &:nth-child(2n) {
-    margin-top: 35px;
+    &:nth-child(2n) {
+      margin-top: 40px;
+    }
   }
 
   @include media(tablet-only) {
-    width: 152px;
-    height: 184px;
+    &:nth-child(2n + 1) {
+      margin-bottom: 50px;
+      margin-right: 32px;
+    }
+
+    &:nth-child(2n) {
+      margin-top: 53px;
+    }
   }
 
   @include media(desktop) {
-    width: 180px;
-    height: 220px;
+    &:nth-child(2n + 1) {
+      margin-bottom: 80px;
+      margin-right: 140px;
+    }
+
+    &:nth-child(2n) {
+      margin-top: 70px;
+    }
   }
 }
 
@@ -151,11 +177,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  width: 130px;
-  height: 130px;
+
   border-radius: 50%;
   background: #fef3e4;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+  @include media(mobile-only) {
+    width: 130px;
+    height: 130px;
+  }
 
   @include media(tablet-only) {
     width: 152px;
@@ -171,10 +201,15 @@
 .program-card__img {
   position: absolute;
   top: 0;
+  transform: translateY(-50%);
+
+  animation: rotate-scale-down 3s linear infinite both;
 }
 
 .program-card__icon {
-  margin-bottom: 11px;
+  @include media(mobile-only) {
+    margin-bottom: 11px;
+  }
 
   @include media(tablet-only) {
     margin-bottom: 14px;
@@ -190,11 +225,14 @@
 }
 
 .program-card__text {
-  margin-bottom: 4px;
   font-family: var(--main-font);
-  font-size: 18px;
-  line-height: 1.28;
+  @include font-size(18px, 23px);
+
   color: var(--donut-title-text-cl);
+
+  @include media(mobile-only) {
+    margin-bottom: 4px;
+  }
 
   @include media(tablet-only) {
     margin-bottom: 11px;
@@ -202,14 +240,20 @@
 
   @include media(desktop) {
     margin-bottom: 16px;
-    font-size: 24px;
-    line-height: 1.25;
+    @include font-size(24px, 30px);
   }
 }
 
 .program-card__details {
   margin-bottom: 9px;
-  font-size: 14px;
-  line-height: 1.21;
+
+  @include font-size(14px, 17px);
+
   color: var(--donut-title-text-cl);
+
+  @include media(desktop) {
+    margin-bottom: 8px;
+
+    @include font-size(16px, 20px);
+  }
 }
