@@ -2,11 +2,28 @@
   <div class="container about-us__container">
     <picture>
       <source
+        srcset="
+          ./images/about-us/about-us_lg.webp    1x,
+          ./images/about-us/about-us_lg@2x.webp 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/webp"
+      />
+      <source
         media="(min-width: 1280px)"
         srcset="
           ./images/about-us/about-us_lg.png    1x,
           ./images/about-us/about-us_lg@2x.png 2x
         "
+      />
+
+      <source
+        srcset="
+          ./images/about-us/about-us_md.webp    1x,
+          ./images/about-us/about-us_md@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
       />
       <source
         media="(min-width: 768px)"
@@ -14,6 +31,15 @@
           ./images/about-us/about-us_md.png    1x,
           ./images/about-us/about-us_md@2x.png 2x
         "
+      />
+
+      <source
+        srcset="
+          ./images/about-us/about-us_sm.webp    1x,
+          ./images/about-us/about-us_sm@2x.webp 2x
+        "
+        media="(max-width: 768px)"
+        type="image/webp"
       />
       <source
         media="(max-width: 767px)"
@@ -28,6 +54,7 @@
         alt="Donut with box and cup"
         width="279"
         height="298"
+        loading="lazy"
       />
     </picture>
     <div class="about-us__block">
