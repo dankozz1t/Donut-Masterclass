@@ -54,6 +54,10 @@
   border-bottom: 1px solid var(--secondary-accent-cl);
   outline: none;
 
+  &:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
+
   @include media(mobile-only) {
     min-width: 280px;
   }
