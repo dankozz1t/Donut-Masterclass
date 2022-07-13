@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
-  display: block;
 }
 
 .socials-list__link {
@@ -16,6 +15,7 @@
 }
 
 .socials-list__icon {
+  display: block;
   .socials-list__link:hover &,
   .socials-list__link:focus & {
     fill: var(--secondary-accent-cl);
