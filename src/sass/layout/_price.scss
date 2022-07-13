@@ -161,7 +161,6 @@
 }
 
 .price__image {
-  display: none;
   @include media(desktop) {
     display: block;
     position: absolute;

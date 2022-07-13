@@ -1,4 +1,12 @@
 .registration {
+  @include media(tablet) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  @include media(desktop) {
+    padding-top: 30px;
+    padding-bottom: 90px;
+  }
   @include media(mobile-only) {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -39,13 +47,13 @@
 }
 
 .tablet__title {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   @include media(mobile-only) {
     display: none;
   }
   @include media(desktop) {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -143,13 +151,17 @@
   }
 }
 
-.registration__data {
-  position: relative;
-  width: 114px;
+.block__data {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 32px;
+  width: 114px;
+}
+
+.registration__data {
+  position: relative;
+  width: 114px;
 
   text-align: center;
   // flex-wrap: wrap;
@@ -230,7 +242,7 @@
   }
 }
 
-.registration__button {
+.block__button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
