@@ -49,11 +49,13 @@
   border-radius: 40px;
 
   background-image: url(../images/price/leaks_sm.png);
+  background-image: url(../images/price/leaks_sm.webp);
   background-size: 100% 102px;
   background-repeat: no-repeat;
 
   @include media(retina) {
     background-image: url(../images/price/leaks_sm@2x.png);
+    background-image: url(../images/price/leaks_sm@2x.webp);
   }
 
   &:hover,
@@ -75,9 +77,11 @@
     justify-content: space-between;
 
     background-image: url(../images/price/leaks_md.png);
+    background-image: url(../images/price/leaks_md.webp);
 
     @include media(retina) {
       background-image: url(../images/price/leaks_md@2x.png);
+      background-image: url(../images/price/leaks_md@2x.webp);
     }
   }
   @include media(desktop) {
@@ -87,10 +91,12 @@
     padding-bottom: 40px;
 
     background-image: url(../images/price/leaks_lg.png);
+    background-image: url(../images/price/leaks_lg.webp);
     background-size: 100% 185px;
 
     @include media(retina) {
       background-image: url(../images/price/leaks_lg@2x.png);
+      background-image: url(../images/price/leaks_lg@2x.webp);
     }
   }
 }
