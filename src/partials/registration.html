@@ -20,7 +20,7 @@
                     type="text"
                     name="user-name"
                     id="name"
-                    placeholder=" "
+                    placeholder="&nbsp;"
                     pattern="^[a-zA-Z]+$"
                     title="Please enter valid name"
                     required
@@ -35,7 +35,7 @@
                     type="tel"
                     name="user-phone"
                     id="tel"
-                    placeholder=" "
+                    placeholder="&nbsp;"
                     pattern="[6789][0-9]{9}"
                     title="Please enter valid phone number"
                     required
@@ -50,7 +50,7 @@
                     type="email"
                     name="user-email"
                     id="registration-email"
-                    placeholder=" "
+                    placeholder="&nbsp;"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
                     title="valid@email.com"
                     required
@@ -71,14 +71,31 @@
       </form>
       <picture class="registration__picture">
         <source
-          media="(min-width:1280px)"
+          srcset="
+            ./images/registration/registration1_lg.webp    1x,
+            ./images/registration/registration1_lg@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
           srcset="
             ./images/registration/registration1_lg.png    1x,
             ./images/registration/registration1_lg@2x.png 2x
           "
         />
+
         <source
-          media="(min-width:768px)"
+          srcset="
+            ./images/registration/registration1_md.webp    1x,
+            ./images/registration/registration1_md@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
           srcset="
             ./images/registration/registration1_md.png    1x,
             ./images/registration/registration1_md@2x.png 2x
@@ -87,6 +104,7 @@
         <img
           src="./images/registration/registration1_md.png"
           alt="chockolate donut"
+          loading="lazy"
         />
       </picture>
     </div>
