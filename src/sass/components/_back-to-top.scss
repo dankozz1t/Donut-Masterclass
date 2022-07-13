@@ -38,6 +38,10 @@
     border-top: 5px solid #f5f0f6;
     border-left: 5px solid #f5f0f6;
   }
+
+  @include media(mobile-only) {
+    bottom: 145px;
+  }
 }
 
 .btn-hidden {
