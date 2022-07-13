@@ -3,11 +3,14 @@
 
   @include media(mobile-only) {
     background-image: url(../images/header/header_sm.png);
+    background-image: url(../images/header/header_sm.webp);
+
     background-repeat: no-repeat;
     background-position: top left;
 
     @include media(retina) {
       background-image: url(../images/header/header_sm@2x.png);
+      background-image: url(../images/header/header_sm@2x.webp);
       background-size: 120px 114px;
     }
   }

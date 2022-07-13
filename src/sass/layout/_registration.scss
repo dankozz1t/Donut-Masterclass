@@ -14,10 +14,12 @@
     padding-top: 20px;
     padding-bottom: 40px;
     background-image: url(../images/registration/registration1_md.png);
+    background-image: url(../images/registration/registration1_md.webp);
     background-size: 200px;
 
     @include media(retina) {
       background-image: url(../images/registration/registration1_md@2x.png);
+      background-image: url(../images/registration/registration1_md@2x.webp);
     }
   }
 
@@ -25,9 +27,11 @@
     padding-top: 30px;
     padding-bottom: 90px;
     background-image: url(../images/registration/registration1_lg.png);
+    background-image: url(../images/registration/registration1_lg.webp);
 
     @include media(retina) {
       background-image: url(../images/registration/registration1_lg@2x.png);
+      background-image: url(../images/registration/registration1_lg@2x.webp);
     }
     background-position: 8% 10%;
     background-size: 250px;

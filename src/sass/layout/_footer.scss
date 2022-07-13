@@ -9,9 +9,11 @@
     background-position: 100% 100%;
 
     background-image: url(../images/footer/footer_sm.png);
+    background-image: url(../images/footer/footer_sm.webp);
 
     @include media(retina) {
       background-image: url(../images/footer/footer_sm@2x.png);
+      background-image: url(../images/footer/footer_sm@2x.webp);
 
       background-size: 84px, 94px;
     }
@@ -23,9 +25,11 @@
     background-position: 100% 29px;
 
     background-image: url(../images/footer/footer_md.png);
+    background-image: url(../images/footer/footer_md.webp);
 
     @include media(retina) {
       background-image: url(../images/footer/footer_md@2x.png);
+      background-image: url(../images/footer/footer_md@2x.webp);
 
       background-size: 184px, 182px;
     }
@@ -37,9 +41,11 @@
     background-position: 100% 0;
 
     background-image: url(../images/footer/footer_lg.png);
+    background-image: url(../images/footer/footer_lg.webp);
 
     @include media(retina) {
       background-image: url(../images/footer/footer_lg@2x.png);
+      background-image: url(../images/footer/footer_lg@2x.webp);
 
       background-size: 303px, 312px;
     }
