@@ -155,7 +155,6 @@
 }
 
 .price__image {
-  display: none;
   @include media(desktop) {
     display: block;
     position: absolute;
@@ -168,9 +167,6 @@
 }
 
 .price__image--one {
-  @include media(mobile) {
-    display: none;
-  }
   @include media(desktop) {
     top: 48%;
     right: 0;
@@ -179,9 +175,6 @@
 }
 
 .price__image--two {
-  @include media(mobile) {
-    display: none;
-  }
   @include media(desktop) {
     left: 0;
     top: 65%;
@@ -189,9 +182,6 @@
 }
 
 .price__image--three {
-  @include media(mobile) {
-    display: none;
-  }
   @include media(desktop) {
     left: 60%;
     top: 65%;
@@ -199,18 +189,12 @@
 }
 
 .price__image--four {
-  @include media(mobile) {
-    display: none;
-  }
   @include media(desktop) {
     left: 0;
     top: 76%;
   }
 }
 .price__image--five {
-  @include media(mobile) {
-    display: none;
-  }
   @include media(desktop) {
     top: 60%;
     right: 0;
@@ -218,9 +202,6 @@
 }
 
 .price__image--six {
-  @include media(mobile) {
-    display: none;
-  }
   @include media(desktop) {
     left: 0;
     bottom: 0;
@@ -229,9 +210,6 @@
 }
 
 .price__image--seven {
-  @include media(mobile) {
-    display: none;
-  }
   @include media(desktop) {
     top: 75%;
     right: 0;
