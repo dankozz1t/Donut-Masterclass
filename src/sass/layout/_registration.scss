@@ -3,35 +3,6 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
-
-  @include media(tablet) {
-    background-repeat: no-repeat;
-    background-position: 0% -10%;
-    background-attachment: scroll;
-  }
-
-  @include media(tablet-only) {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    background-image: url(../images/registration/registration1_md.png);
-    background-size: 200px;
-
-    @include media(retina) {
-      background-image: url(../images/registration/registration1_md@2x.png);
-    }
-  }
-
-  @include media(desktop) {
-    padding-top: 30px;
-    padding-bottom: 90px;
-    background-image: url(../images/registration/registration1_lg.png);
-
-    @include media(retina) {
-      background-image: url(../images/registration/registration1_lg@2x.png);
-    }
-    background-position: 8% 10%;
-    background-size: 250px;
-  }
 }
 
 .tablet__title {
@@ -74,6 +45,7 @@
   }
 
   @include media(tablet) {
+    height: 234px;
     width: 704px;
     padding: 40px 61px;
     background: var(--secondary-bg-cl);
@@ -83,8 +55,31 @@
   }
 
   @include media(desktop) {
+    height: 246px;
     width: 822px;
     padding: 40px 105px;
+  }
+}
+.registration__thumb {
+  position: relative;
+}
+.registration__picture {
+  display: none;
+  @include media(tablet) {
+    width: 250px;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: -40%;
+    left: -5%;
+
+    & {
+      animation: pulsate-fwd 1s ease-in-out infinite both;
+    }
+  }
+  @include media(desktop) {
+    top: -30%;
+    left: 6%;
   }
 }
 
@@ -124,7 +119,7 @@
   margin-bottom: 32px;
 
   text-align: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   font-family: var(--secondary-font);
   @include font-size(18px, 22px, 500);
@@ -133,6 +128,9 @@
   @include media(tablet) {
     width: 90px;
     flex-wrap: wrap;
+  }
+  @include media(desktop) {
+    width: 127px;
   }
 
   &::after {
@@ -164,7 +162,7 @@
 
 .registration__description {
   margin-bottom: 20px;
-
+  width: 265px;
   font-family: var(--secondary-font);
   @include font-size(16px, 20px);
   color: var(--main-text-cl);
@@ -174,9 +172,13 @@
   @include media(tablet) {
     text-align: start;
     margin-bottom: 0;
+    width: 283px;
+    @include font-size(16px, 20px);
   }
   @include media(desktop) {
     margin-bottom: 28px;
+    width: 238px;
+    @include font-size(18px, 22px);
   }
 }
 

@@ -1,62 +1,105 @@
 <section class="registration" id="registration">
   <div class="container">
     <h2 class="tablet__title section-title">Registration</h2>
-    <form class="registration__form">
-      <div class="registration__holder">
-        <h2 class="registration__title section-title">Registration</h2>
-        <div class="block">
-          <div class="block__data">
-            <p class="registration__data">May 23, 11:00 New York</p>
-          </div>
-          <div class="block__description">
-            <p class="registration__description">
-              Apply your personal info <br />
-              for registration
-            </p>
-            <div class="registration__group">
-              <div class="registration__field">
-                <input
-                  class="registration__input"
-                  type="text"
-                  name="user-name"
-                  id="name"
-                  placeholder="&nbsp;"
-                />
-                <label class="registration__label" for="name">Your name</label>
-              </div>
-              <div class="registration__field">
-                <input
-                  class="registration__input"
-                  type="tel"
-                  name="user-phone"
-                  id="tel"
-                  placeholder="&nbsp;"
-                />
-                <label class="registration__label" for="tel"
-                  >Phone number</label
-                >
-              </div>
-              <div class="registration__field">
-                <input
-                  class="registration__input"
-                  type="email"
-                  name="user-email"
-                  id="registration-email"
-                  placeholder="&nbsp;"
-                />
-                <label class="registration__label" for="registration-email"
-                  >Email</label
-                >
+    <div class="registration__thumb">
+      <form class="registration__form">
+        <div class="registration__holder">
+          <h2 class="registration__title section-title">Registration</h2>
+          <div class="block">
+            <div class="block__data">
+              <p class="registration__data">May 23, 11:00 New York</p>
+            </div>
+            <div class="block__description">
+              <p class="registration__description">
+                Apply your personal info for registration
+              </p>
+              <div class="registration__group">
+                <div class="registration__field">
+                  <input
+                    class="registration__input"
+                    type="text"
+                    name="user-name"
+                    id="name"
+                    placeholder="&nbsp;"
+                    pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                    title="Please try again"
+                  />
+                  <label class="registration__label" for="name"
+                    >Your name</label
+                  >
+                </div>
+                <div class="registration__field">
+                  <input
+                    class="registration__input"
+                    type="tel"
+                    name="user-phone"
+                    id="tel"
+                    placeholder="&nbsp;"
+                  />
+                  <label class="registration__label" for="tel"
+                    >Phone number</label
+                  >
+                </div>
+                <div class="registration__field">
+                  <input
+                    class="registration__input"
+                    type="email"
+                    name="user-email"
+                    id="registration-email"
+                    placeholder="&nbsp;"
+                  />
+                  <label class="registration__label" for="registration-email"
+                    >Email</label
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="block__button">
-            <button class="button registration__button" type="submit">
-              Register
-            </button>
+            <div class="block__button">
+              <button class="button registration__button" type="submit">
+                Register
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
+      <picture class="registration__picture">
+        <source
+          srcset="
+            ./images/registration/registration1_lg.webp    1x,
+            ./images/registration/registration1_lg@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/registration/registration1_lg.png    1x,
+            ./images/registration/registration1_lg@2x.png 2x
+          "
+        />
+
+        <source
+          srcset="
+            ./images/registration/registration1_md.webp    1x,
+            ./images/registration/registration1_md@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/registration/registration1_md.png    1x,
+            ./images/registration/registration1_md@2x.png 2x
+          "
+        />
+        <img
+          src="./images/registration/registration1_md.png"
+          alt="chockolate donut"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>
