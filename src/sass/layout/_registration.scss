@@ -172,7 +172,7 @@
   @include media(tablet) {
     text-align: start;
     margin-bottom: 0;
-    width: 283px;
+    width: 203px;
     @include font-size(16px, 20px);
   }
   @include media(desktop) {
@@ -221,6 +221,9 @@
   border-bottom: 1px solid var(--secondary-accent-cl);
   outline: none;
 
+  &:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
   @include media(tablet-only) {
     margin-bottom: 0;
   }

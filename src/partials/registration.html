@@ -21,8 +21,9 @@
                     name="user-name"
                     id="name"
                     placeholder=" "
-                    pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                    title="Please try again"
+                    pattern="^[a-zA-Z]+$"
+                    title="Please enter valid name"
+                    required
                   />
                   <label class="registration__label" for="name"
                     >Your name</label
@@ -35,6 +36,9 @@
                     name="user-phone"
                     id="tel"
                     placeholder=" "
+                    pattern="[6789][0-9]{9}"
+                    title="Please enter valid phone number"
+                    required
                   />
                   <label class="registration__label" for="tel"
                     >Phone number</label
@@ -47,6 +51,9 @@
                     name="user-email"
                     id="registration-email"
                     placeholder=" "
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
+                    title="valid@email.com"
+                    required
                   />
                   <label class="registration__label" for="registration-email"
                     >Email</label
