@@ -74,7 +74,7 @@ img {
   background-position: top, bottom;
 
   @include media(mobile-only) {
-    background-size: 100% 460px, 100% 1325px;
+    background-size: 100% 460px, 100% 1328px;
     background-position: right 0 top 0, right 0 bottom 211px;
 
     background-image: url('../images/background-images/spot-top-sm.png'),
