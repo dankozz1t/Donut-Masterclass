@@ -34,7 +34,7 @@
 
 [![Valentina Ganovska](https://img.shields.io/badge/Scrum_Master-Valentina_Ganovska-purple?style=for-the-badge&logo=Contacts&logoColor=white)](#)
 [![GitHub](https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/valhanovska)
-[![Telegram](https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/ValentynaRFL)
+[![Telegram](https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/Valli9)
 [![Email](https://img.shields.io/badge/val.hanovska@gmail.com-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white)](mailto:val.hanovska@gmail.com)
 
 [![Oleksandr Kholod](https://img.shields.io/badge/Developer-Oleksandr_Kholod-purple?style=for-the-badge&logo=Contacts&logoColor=white)](#)
