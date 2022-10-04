@@ -49,4 +49,5 @@
 [![Oleksandr Andriyash](https://img.shields.io/badge/Developer-Oleksandr_Andriyash-purple?style=for-the-badge&logo=Contacts&logoColor=white)](#)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oleksandr-andriyash-6820091ab/)
 [![GitHub](https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/AlexIaInder)
+[![Telegram](https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/AndriyashS)
 [![Email](https://img.shields.io/badge/olexandr.andriyash@gmail.com-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white)](mailto:olexandr.andriyash@gmail.com)
