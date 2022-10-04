@@ -47,5 +47,6 @@
 [![Email](https://img.shields.io/badge/albinabondar2019@gmail.com-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white)](mailto:albinabondar2019@gmail.com)
 
 [![Oleksandr Andriyash](https://img.shields.io/badge/Developer-Oleksandr_Andriyash-purple?style=for-the-badge&logo=Contacts&logoColor=white)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oleksandr-andriyash-6820091ab/)
 [![GitHub](https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/AlexIaInder)
 [![Email](https://img.shields.io/badge/olexandr.andriyash@gmail.com-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white)](mailto:olexandr.andriyash@gmail.com)
